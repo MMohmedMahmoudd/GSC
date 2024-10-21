@@ -1,0 +1,85 @@
+/* Faq Area */
+.faq_area{
+    display: block;
+    overflow: hidden;
+    padding: 140px 0 0; 
+    h2{
+        font: 600 30px/46px $muli;
+        color: #18152c;
+        position: relative; 
+        text-transform: uppercase;  
+        display: block;
+        text-align: center;
+        padding-bottom: 25px;
+        &:before{
+            content: "";
+            position: absolute; 
+            left: 0;
+            right: 0;
+            bottom: -1px;
+            margin: 0 auto;
+            height: 3px;
+            width: 50px;
+            background: #444444;
+            border-left: 10px solid #fff;
+            border-right: 10px solid #fff;
+            z-index: 1;
+        }
+        &:after{
+            content: "";
+            position: absolute; 
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            height: 1px;
+            width: 110px;
+            background: #e2e2e2;
+        }
+    }
+
+    .faq_accordion{ 
+        margin-top: 80px;
+        border: 1px solid #ededed;
+        padding: 45px;
+        padding-left: 0;
+        .item{  
+            margin-bottom: 30px;
+            a{
+                font: 400 21px/30px $muli; 
+                color: #1e1e27;
+                display: block;
+                padding-left: 55px; 
+                position: relative;
+                &:after{ 
+                    content: "\f068";
+                    font: normal normal normal 14px/30px FontAwesome;
+                    color: #fff;
+                    width: 30px;
+                    background: $bc;
+                    position: absolute;
+                    left: 0;
+                    top: 0; 
+                    text-align: center;
+                }
+                &.collapsed{  
+                    &:after{  
+                        content: "\f067";
+                        color: #000;  
+                        background: #ededed;
+                    }
+                }
+            }
+            .accordion_content{
+//                padding-left: 55px;
+//                padding-top: 25px;
+//                padding-bottom: 35px;
+                padding: 25px 0 35px 55px;
+            }
+            p{  
+                max-width: 1030px;
+            } 
+        }
+    }  
+}
+/* End Faq Area */

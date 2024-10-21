@@ -1,0 +1,88 @@
+/* experience_area */
+.experience_area{
+    display: block;
+    overflow: hidden;
+    margin-top: -170px;
+    z-index: 1;
+    position: relative;
+    .experience_inner{
+        background: $bc url("../images/experience-bg.png") no-repeat;
+        padding: 50px 0;
+        margin: 0;
+        .experience{
+            padding: 0;
+            padding-left: 90px;
+            h1{
+                font: 900 100px/1 $muli;
+                color: #fff;
+            }
+            p{
+                font: 400 21px/35px $muli;
+                color: #fff;
+                max-width: 340px;
+                display: block;
+                padding: 10px 0 40px;
+            }
+            a{
+                font: 400 21px/35px $muli;
+                color: #fff; 
+                display: inline-block;
+                position: relative;
+                border-bottom: 1px solid #f97a44; 
+                &:hover, &:focus{
+                    color: $hover;
+                    border-color: $hover;
+                }
+            }
+        }
+        .sustainability{
+            border-left: 1px solid #fb5c18;
+            margin: 0;
+            padding: 0;
+            padding-left: 70px;
+            .result{
+                padding-left: 20px;
+                padding-top: 30px;
+                position: relative;
+                margin-bottom: 65px;
+                z-index: 1;
+                &:after{
+                    content:"\f10b";
+                    position: absolute;
+                    left: 10px;
+                    top: -13px;
+                    font-family: Flaticon;
+                    font-size: 134px;
+                    color: #ff6c2e;
+                    z-index: -1;
+                }
+                &.team{
+                    margin-left: 25px;
+                    &:after{
+                        content: "\f10d";
+                        top: -20px;
+                    }
+                }
+                h4{ 
+                    font: 400 21px/31px $muli;
+                    color: #fff;
+                } 
+                h2{
+                    font: 700 55px/1 $muli;
+                    color: #fff;
+                    padding-top: 30px;
+                }
+            }
+            .theme_btn{
+                display: block;
+                background: #fe6829;
+                line-height: 65px;
+                margin-right: 100px;
+            }
+        }
+    }
+}
+.ea_2{
+    margin-top: 0; 
+}
+/* experience_area */

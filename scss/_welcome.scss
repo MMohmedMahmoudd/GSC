@@ -1,0 +1,107 @@
+/*Welcome_area */
+.welcome_area{
+    display: block;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 55px;
+    .welcome_img{
+        position: relative; 
+        z-index: 1;
+        &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom:-55px;
+            background: url("../images/welcome-border.jpg") no-repeat;
+            display: block;
+            width: 100%;
+            height: 55px;
+            z-index: -1;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    .welcome_content_aera{
+        background: url("../images/factroy.png") no-repeat right bottom;
+        padding-left: 55px;
+        .welcome_content{
+            max-width: 670px;
+            padding-left: 45px; 
+        }
+        h2{
+            color: $heding;
+            font: 700 48px/56px $muli;
+            position: relative;
+            padding-top: 25px;
+            &:after{
+                content: "We industrial";
+                font: 700 110px/1 $danc;
+                color: #f0f0f0;
+                position: absolute;
+                left: -35px; 
+                top: -25px;  
+                text-align: center; 
+                z-index: -1;
+            }
+        }
+        p{
+            max-width: 590px;
+        }
+        .sub_p{
+            color: #fc7837;
+            font-size: 21px;
+            line-height: 31px;
+            padding: 40px 0 20px;
+            max-width: 100%;
+        }
+        h4{
+            font: 700 24px/36px $muli;
+            color: $heding;
+            padding: 50px 0 25px;
+            i:before{
+                color: $bc;
+                font-size: 69px;
+                line-height: 1;
+                margin-right: 20px;
+                font-weight: normal;
+            }
+        }
+        .factory_p{
+            max-width: 550px;
+            padding-bottom: 60px;
+        }
+        a{
+            font: 600 16px/60px $muli;
+            color: $pfont;
+            padding-left: 90px; 
+            display: block;
+            position: relative;
+            &:before{
+                content: "";
+                border: 1px solid $bc;
+                width: 55px;
+                height: 60px;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            i:before{
+                color: $bc;
+                padding-left: 15px;
+                font-size: 19px;
+                line-height: 1;
+                display: inline-block;
+                @include transition;
+            }
+            &:hover, &:focus{
+                color: $bc;
+                i:before{
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
+/* Welcome_area */

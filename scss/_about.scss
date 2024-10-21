@@ -1,0 +1,41 @@
+/* About_company_area */
+.about_company_area{
+    display: block;
+    overflow: hidden;
+    padding-top: 100px;
+    background: url("../images/about-shep.png") no-repeat left bottom;
+    .about_company{
+        max-width: 585px;
+        float: right; 
+        padding-top:75px;
+    }
+    h4{
+        font: 400 21px/36px $muli;
+        color: $heding;
+        padding-bottom: 40px; 
+    }
+    h2{
+        font: 700 48px/55px $muli;
+        color: $heding;
+    }
+    p{
+        max-width: 550px;
+        padding: 40px 0 95px;
+    }
+    .theme_btn{
+        border-radius: 10px;
+        min-width: 210px;
+        line-height: 55px;
+        font-size: 20px;
+        overflow: hidden;
+    }
+    .company_img{
+        text-align: right; 
+        padding-right: 50px;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+/* About_company_area */
+

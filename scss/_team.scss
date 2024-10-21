@@ -1,0 +1,85 @@
+/* Team_area */
+.team_area{
+    display: block;
+    overflow: hidden;
+    padding-top: 145px; 
+    .team{
+        margin-bottom: 30px;
+        text-align: center;
+        .team_img{
+            display: block;
+            overflow: hidden;
+            img{
+                max-width: 100%;
+                transition: all 500ms linear 0s;
+            }
+        }
+        .team_content{
+            box-shadow: 0px 0px 18px 0px rgba(216, 216, 216, 0.75);
+            padding: 35px 40px;
+            position: relative;
+            @include transition;
+            .s_icon{
+                width: 57px;
+                line-height: 57px;
+                text-align: center;
+                background: #fff;
+                border-radius: 50%;
+                color: $bc;
+                font-size: 20px;
+                display: block;
+                margin: 0 auto;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                @include transition;
+                opacity: 0;
+            }
+            .heading{
+                display: block;
+                font: 700 24px/1 $muli;
+                color: #424d6c; 
+            }
+            h6{
+                display: block;
+                font: 400 16px/1 $muli;
+                color: $bc;
+                padding: 20px 0 20px;
+                @include transition;
+            } 
+            p{
+                @include transition;
+            }
+        }
+        &:hover, &:focus{
+            .team_img img{
+                transform: scale3D(1.2, 1.2, 2);
+            }
+            .team_content{
+                background: $bc;
+                .s_icon{
+                    top: -40px;
+                    opacity: 1;
+                }
+                .heading{
+                    color: #fff;
+                }
+                h6{
+                    color: rgba(255, 255, 255, 0.902);
+                }
+                p{
+                    color: rgba(255, 255, 255, 0.702);
+                }
+            }
+        }
+    }
+}
+.ta_2{
+    padding-bottom: 100px;
+}
+/* End Team_area */
+ 
+
+
+ 

@@ -1,0 +1,644 @@
+// Extra Large devices (desktops, less than 1231px) 
+@media (max-width: 1440px){ 
+    .fetured_project_area .fetured_project{
+        padding-left: 15px;
+        padding-right: 15px;
+         .project .project_content{
+            padding: 45px 15px;
+        }
+    }
+    .testimonial_area .carousel-indicators{
+        right: 50px;
+        left: auto;
+        margin: 0;
+    }
+}
+// Large devices (desktops, less than 1231px)
+@media (max-width: 1199px) { 
+    .header_logo_area .header_logo_inner .right_info {
+        padding-left: 20px;
+        .media{
+            &:nth-child(2){
+                padding-left: 30px;
+            }
+            .media-body{
+                padding-left: 10px;
+            }
+        }
+    }
+    .main_header_area .header_menu{
+        .navbar .navbar_supported ul{
+            padding-left: 15px; 
+            li{
+                a{
+                    margin:0 12px;
+                    font-size: 16px;
+                    &:after{
+                        display: none;
+                    }
+                }
+                .theme_btn{
+                    min-width: 185px;
+                }
+            }
+        }
+        .search_button_content li.search_dropbown{
+            padding: 0 15px;
+        }
+    } 
+    .welcome_area .welcome_content_aera{ 
+        .welcome_content{
+            padding-left: 0;
+        }
+    }
+    .about_company_area .about_company{
+        padding-left: 30px;
+        float: none;
+        padding-bottom: 50px;
+        padding-right: 30px;
+    }
+    .fetured_project_area {
+        .fetured_project{
+            padding-left: 150px;
+            padding-right: 150px;
+            .project{
+                max-width: 370px;
+                margin: 0 auto 30px;
+            }
+        } 
+    }
+    
+    .tittle a{
+        float: none !important;
+        margin-top: 30px !important;
+    }
+    .testimonial_area{
+        padding-top: 80px;
+        text-align: center;
+        &:after{
+            top: auto;
+            bottom: 0;
+        }
+        .carousel-indicators{
+            right: 0;
+            left: 0;
+            margin: 0;
+            bottom: 220px;
+        }
+        .testimonial_content{
+            margin: 0 auto;
+            .testimonial_logo{
+                margin-top: 100px;
+                padding-bottom: 80px;
+            }
+        }
+        
+    }
+    .contact_inf_area{ 
+        .location_info, .mail_info{
+            padding-left: 15px;
+        }
+    }
+    .footer_area .copy_right .receive_email{
+        text-align: right;
+        h4{
+            padding: 0;
+            float: none;
+        }
+    }
+    .blog_area .blog_leftsidebar{
+        padding-right: 15px;
+        .col-lg-7, .col-lg-5{
+            max-width: 50%;
+        }
+        .blog_grid .like_comment li{
+            padding-left: 3px;
+        }
+    } 
+    .blog_rightsidebar .categories .categories_list li a{
+        font-size: 16px;
+    }
+    .factories {
+        .fetures{
+            padding: 10px;
+            padding-top: 20px;
+            a{
+                padding-top: 20px;
+            }
+        }
+    }
+    .industries_singl_area .left_sidebar{
+        padding-top: 60px;
+    }
+    .isa_2 .right_sidebar .construction {
+        padding-left: 15px;
+        .installation{
+            margin-top: 40px;
+        }
+    }
+    .from_area .meta{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { 
+    .header_top_area .contact_number li a{
+        font-size: 16px;
+        i:before{
+            font-size: 16px;
+            margin-right: 15px;
+        }
+    }
+    .header_logo_area {
+        padding-top: 20px; 
+        padding-bottom: 0;
+        .header_logo_inner {
+            .right_info{
+                padding-left: 0;
+            }
+            .navbar-brand {
+                display: block;
+                text-align: center;
+                padding-bottom: 50px;
+                margin: 0;
+            }
+        }
+    }
+    .main_header_area{ 
+        .header_menu {
+            position: relative;
+            .navbar{  
+                width: 100%;
+                .navbar-toggler{ 
+                    font-size: 30px;
+                    color: $heding;
+                    padding: 0;
+                    margin: 0;
+                    padding-left: 20px;
+                    line-height: 70px;
+                    border: 0;
+                    &:hover, &:focus{
+                        
+                    } 
+                }
+                .navbar-nav{ 
+                    margin: 0;
+                    margin-top: 2px;
+                    border-top: 1px solid #e3e3e3;
+                    max-height: 370px;
+                    overflow-y: auto;
+                    padding-left: 0 !important;
+                    li{
+                        border-bottom: 1px solid #e3e3e3;
+                        &:last-child{
+                            border: 0
+                        }
+                        a{ 
+                            line-height: 45px !important;
+                            margin: 0 20px !important; 
+                            &:after{
+                                display: none !important;
+                            }
+                            
+                            i{
+                                line-height: 45px;
+                                float: right;
+                            }
+                        }
+                        &.dropdown{
+                            position: relative;
+                            &:after{
+                                content: "\f103";
+                                position: absolute;
+                                top: 0;
+                                right: 20px;
+                                font: normal normal normal 15px/48px FontAwesome;
+                                color: #fff;
+                            }
+                            .dropdown-menu{
+                                background-color: transparent;
+                                border: 0;
+                                border-top: 1px solid #fff;
+                                &:before{
+                                    display: none;
+                                }
+                                li a{ 
+                                    border: 0; 
+                                    &:hover, &:focus, &.active{ 
+                                        border: 0;
+                                    }
+                                }
+                                .dropdown:after{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }   
+            .search_button_content {
+                position: absolute;
+                right: 0;
+                top: 0; 
+                .search_dropbown{
+                    a{
+                        line-height: 70px !important;
+                    }
+                    .dropdown-menu{
+                        margin-left: -248px !important;
+                    }
+                } 
+                li .theme_btn{
+                    line-height: 70px !important;
+                } 
+            }
+        } 
+    }     
+    .slider_carousel {
+        .media .media-body{
+            padding: 20px;
+        }
+        .carousel-indicators{
+            top: auto;
+        }
+    }
+    .welcome_area .welcome_img{
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+    .fetures_area{
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .about_company_area {
+        padding-top: 20px;
+        .company_img{
+            padding: 0 30px;
+        }
+    }
+    .fetured_project_area .fetured_project{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .team_area{
+        padding-top: 100px;
+    }
+    .latest_news_area{
+        padding: 50px 0 0;
+        .latest_news_inner .right_blog{
+            padding-top: 50px;
+        }
+    }
+    .contact_inf_area .location_info{
+        margin-top: 10px;
+    }
+    .footer_area {
+        .footer_inner{
+            padding-bottom: 80px; 
+        }
+        .copy_right{
+            text-align: center;
+            padding-bottom: 0;
+            .receive_email{
+                float: none;
+                text-align: center;
+                h4{
+                    float: none;
+                    padding: 0;
+                    display: block;
+                }
+            } 
+        }
+    }
+    .blog_rightsidebar {
+        padding-top: 50px;
+    } 
+    .cia_2 {
+        margin-top: 50px;
+    }
+    .industries_singl_area{
+        padding-top: 60px;
+    }
+    .industries_singl_area .right_sidebar .optimize_operations .appointment{
+        margin-bottom: 40px;
+    }
+    .isa_2 .driving_productivity{
+        padding-top: 50px;
+        .productivity{
+            padding-top: 0;
+        }
+    }
+    .faq_area{
+        padding: 80px 0 0;
+    }
+    .map_area .easy_contact{
+        max-width: 100%;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .from_area .meta{
+        margin: 80px 0 30px;
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { 
+    .header_top_area {
+        padding: 10px 0;
+        text-align: center;
+        li a{
+            line-height: 30px !important;
+        }
+        .lng_time{
+            text-align: center;
+        }
+    }
+    .header_logo_area .header_logo_inner .right_info{
+        .media {
+            padding: 0 20px;
+        }
+         .header_social{
+            display: none;
+        } 
+    }
+    .slider_carousel {
+        margin-top: 60px;
+        .media .media-body p{
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+    .welcome_area{
+        padding-top: 100px;
+        .welcome_content_aera{
+            h2{
+                font-size: 25px;
+                line-height: 35px;
+                &:after{
+                    font-size: 60px;
+                    top: 0;
+                }
+            }
+        }
+    }
+    .experience_area .experience_inner .sustainability .result.team{
+        margin-left: 0;
+        padding: 0;
+    }
+    .team_area .team{
+        max-width: 370px;
+        margin: 0 auto 30px;
+    }
+    .footer_area .footer_inner{
+        padding-bottom: 0;
+        .footer_widget{
+            padding-left: 15px;
+            padding-bottom: 40px;
+        }
+    } 
+    .blog_area{
+        padding-top: 100px;
+        .blog_leftsidebar {
+            .col-lg-7, .col-lg-5{
+                max-width: 370px;
+                margin: 0 auto 30px;
+            }
+            .bl_2{
+                max-width: 440px;
+                margin: 0 auto 30px;
+            }
+        }
+        
+    } 
+    .blog_area{
+        padding-top: 100px;
+    }
+    .blog_single .heding{
+        font-size: 25px;
+        line-height: 30px;
+        padding-bottom: 10px;
+    } 
+    .banner_area { 
+        padding: 150px 0 110px;
+        h2{
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
+    .fa_2 .factories{
+        max-width: 370px;
+        margin: 0 auto 30px;
+        .fetures{
+            padding: 30px;
+        }
+    }
+    .industries_singl_area .right_sidebar{
+        h2{
+            float: none;
+            font-size: 25px;
+            line-height: 35px;
+        }
+        .social_share{
+            float: none;
+            margin-top: 20px;
+        }
+        .solutions_engineering .engineering{
+            margin-bottom: 30px;
+        }
+        .risk_assurance .graphic_p{
+            padding-left: 0;
+            padding-top: 20px;
+        }
+    } 
+    .isa_2 .driving_productivity {
+        .productivity_img{
+            margin-bottom: 30px;
+        }
+        .productivity {
+            padding-bottom: 50px;
+        }
+    }
+    .map_area{
+        padding-top: 80px;
+        #mapBox{
+            height: 320px;
+        }
+    }
+} 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { 
+    .main_header_area .header_menu .search_button_content .search_dropbown .dropdown-menu {
+        margin-left: -43px !important;
+    }
+    .slider_carousel .media .popup-youtube{
+        width: 130px;
+        height: 150px;
+        padding: 45px;
+        i:before{
+            margin-bottom: 10px;
+        }
+    }
+    .welcome_area .welcome_content_aera{
+        padding-left: 40px;
+        padding-right: 30px;
+        .sub_p{
+            font-size: 16px;
+            padding-top: 15px;
+        }
+    }
+    .about_company_area{
+        h4{
+            padding-bottom: 10px;
+        }
+        h2{
+            font-size: 25px;
+            line-height: 35px;
+        }
+        p{
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+    } 
+    .experience_area .experience_inner{
+        .experience{
+            padding-left: 15px;
+        }
+        .sustainability{
+            padding-left: 0;
+            padding-top: 30px;
+            .theme_btn{
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        } 
+    }
+    .latest_news_area .tittle h2{
+        font-size: 25px;
+        &:after{
+            font-size: 60px;
+            top: 20px;
+        }
+    }
+    .blog_area .blog_leftsidebar{
+        .blog_grid .blog_content{
+            min-height: auto;
+        }
+        .blog_list {
+            .like_comment{
+                float: none;
+                padding-top: 10px;
+            }
+            .heding{
+                font-size: 25px;
+                line-height: 35px;
+                padding-top: 15px;
+            }
+            .date_no{
+                padding-top: 10px; 
+                line-height: 25px;
+                width: 60px;
+                b{
+                    font-size: 18px;
+                    padding: 0;
+                }
+            }
+        }
+    } 
+    .blog_single {
+        .share_row .share {
+            float: none;
+            padding-top: 20px;
+        }
+        .author .media-body {
+            padding-left: 15px;
+        }
+    }
+    .isa_2 .right_sidebar .construction{
+        max-width: 100%;
+    }
+    .map_area .easy_contact address{
+        padding-left: 30px;
+        padding-right: 30px;
+    }  
+}
+
+// Extra small devices (portrait phones, less than 360px and 420px) 
+@media (max-width:420px){
+    .slider_carousel .media .media-body{
+        padding: 10px;
+        p{
+            font-size: 12px;
+        }
+    } 
+    .latest_news_area .latest_news_inner .right_blog .media .media-body{
+        padding-left: 10px;
+        a{
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+    .blog_area .blog_leftsidebar{
+        .col-lg-7, .col-lg-5{
+            max-width: 100%;
+        }
+    } 
+    .blog_area .blog_leftsidebar .blog_list .heding{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .blog_single {
+        .author{
+            display: block;
+            .media-body{
+                padding: 0 !important;
+                padding-top: 20px !important;
+            } 
+        }
+        .comments_area .author.author_r{
+            padding-left: 0;
+        }
+    }
+    .industries_singl_area .right_sidebar {
+        .optimize_operations{
+            .appointment{
+                padding: 30px 20px;
+                .heding{
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+            .operations li{
+                font-size: 16px;
+            }
+        } 
+        .risk_assurance .graphic_p{
+            font-size: 18px;
+            line-height: 25px;
+        } 
+    }
+    .isa_2 .next_prv a{
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 360px) {
+    .main_header_area .header_menu .search_button_content li .theme_btn{
+        min-width: 160px;
+        font-size: 16px;
+        i{
+            font-size: 12px;
+            padding-right: 10px;
+        }
+    }
+    .welcome_area .welcome_content_aera h2{
+        font-size: 20px;
+    }
+    .blog_single .heding{
+        font-size: 20px;
+    }
+    .fa_2 .factories .fetures{
+        padding: 10px;
+    }
+}

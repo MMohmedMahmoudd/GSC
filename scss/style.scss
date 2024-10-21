@@ -1,0 +1,86 @@
+/* ------------------------------------------------------
+@File: Default Styles
+@Author: Themazine
+@Developed By: Emran Khan 
+@Developer Email: fed.emran@gmail.com
+@Developer URL: http://emran-khan.com
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+------------------------------------------------------- */
+
+/* ======================================================
+@Template Name: Pectro
+@Author: Themazine 
+@Default Styles
+
+Table of Content:
+01/ Variables
+02/ Prefix
+03/ Header
+04/ Slider
+05/ Welcome
+06/ Fetures
+07/ About 
+08/ Experience
+09/ Testimonial
+10/ News
+11/ Team
+12/ Form 
+13/ Faq
+14/ Industries  
+15/ Footer  
+16/ Responsive   
+
+===================================================== */ 
+
+/*----------------------------------------------------*/
+@import "variables";
+/*----------------------------------------------------*/  
+@import "prefix";
+/*----------------------------------------------------*/ 
+@import "header";
+/*----------------------------------------------------*/  
+@import "slider";
+/*----------------------------------------------------*/ 
+@import "welcome";
+/*----------------------------------------------------*/ 
+@import "fetures";
+/*----------------------------------------------------*/   
+@import "about";
+/*----------------------------------------------------*/   
+@import "experience";
+/*----------------------------------------------------*/  
+@import "testimonial";
+/*----------------------------------------------------*/  
+@import "team";
+/*----------------------------------------------------*/ 
+@import "news";
+/*----------------------------------------------------*/ 
+@import "from";
+/*----------------------------------------------------*/ 
+@import "faq";
+/*----------------------------------------------------*/  
+@import "industries";
+/*----------------------------------------------------*/      
+@import "footer";
+/*----------------------------------------------------*/  
+@import "responsive";
+/*---------------------------------------------------- */  
+
+/*All CSS call*/ 
+@import "../css/bootstrap.min.css"; /* Bootstrap CSS */
+/* Icon CSS */
+@import "../css/font-awesome.min.css";  
+@import "../vendors/flat-icon/flaticon.css";
+/* Extra Plugins CSS */ 
+@import "../vendors/animate-css/animate.css"; 
+@import "../vendors/magnify-popup/magnific-popup.css";  
+@import "../vendors/owl-carousel/owl.carousel.min.css";   
+/* Rev slider css */  
+@import "../vendors/revolution/css/settings.css";
+@import "../vendors/revolution/css/layers.css"; 
+@import "../vendors/revolution/css/navigation.css";    
+/* Font family link */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Muli:300i,400,600,700,900');
