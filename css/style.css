@@ -85,6 +85,9 @@ Table of Content:
     opacity: 1;
   }
 }
+.w-20{
+  width: 20%;
+}
 .w-30{
   width: 30%;
 }
@@ -723,7 +726,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .welcome_area .welcome_content_aera {
   background: url("../images/factroy.png") no-repeat right bottom;
   padding-left: 55px;
-  background-position: center center;
+  background-position: center right;
   background-size: contain;
 }
 .welcome_area .welcome_content_aera .welcome_content {
@@ -3076,6 +3079,11 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .scroll-top:hover, .scroll-top:focus {
   background: #ce8506;
+}
+.footer_inner a.text-dark{
+  font-weight: 800;
+  font-size: 1rem;
+  padding-left: 0.6rem;
 }
 
 /*----------------------------------------------------*/
