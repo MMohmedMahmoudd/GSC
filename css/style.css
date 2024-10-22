@@ -90,6 +90,9 @@ Table of Content:
     opacity: 1;
   }
 }
+.w-30{
+  width: 30%;
+}
 /* Button Style */
 .theme_btn {
   color: #fff;
