@@ -700,7 +700,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .welcome_area {
   display: block;
   overflow: hidden;
-  padding-top: 2rem;
+  padding-top: 8rem;
   padding-bottom: 55px;
 }
 .welcome_area .welcome_img {
@@ -3104,9 +3104,16 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 @media (max-width: 1199px) {
   .navbar-brand img{
-    width: 33%;
-    height: 6rem;
+    width: 30%;
+    height: 7rem;
 }
+.media{
+  display: none !important;
+}
+.header_social{
+  display: none !important;
+}
+
   
   .header_logo_area .header_logo_inner .right_info {
     padding-left: 20px;
