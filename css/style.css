@@ -879,7 +879,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .fa_2 .factories .factories_img img {
   max-width: 100%;
 }
-.fa_2 .factories .factories_img a {
+.fa_2 .factories .factories_img h3 {
   display: block;
   font: 700 21px/30px "Muli", sans-serif;
   color: #fff;
@@ -888,7 +888,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(60, 71, 205, 0.839);
+  background-color: #f9520b;
 }
 .fa_2 .factories .fetures {
   position: absolute;
@@ -904,7 +904,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   transition: all 500ms ease;
   margin: 0;
 }
-.fa_2 .factories .fetures .fetures_i:before, .fa_2 .factories .fetures h4, .fa_2 .factories .fetures a {
+.fa_2 .factories .fetures .fetures_i:before, .fa_2 .factories .fetures h4, .fa_2 .factories .fetures h3 {
   color: #fff;
 }
 .fa_2 .factories .fetures p {
@@ -3103,17 +3103,15 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   }
 }
 @media (max-width: 1199px) {
-  .navbar-brand img{
-    width: 30%;
-    height: 7rem;
-}
 .media{
   display: none !important;
 }
 .header_social{
   display: none !important;
 }
-
+#slide-3-layer-3{
+  margin-top: 2rem !important;
+}
   
   .header_logo_area .header_logo_inner .right_info {
     padding-left: 20px;
@@ -3240,6 +3238,11 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   }
 }
 @media (max-width: 991px) {
+  .navbar-brand img{
+    width: 30%;
+    height: 7rem;
+}
+
   .header_top_area .contact_number li a {
     font-size: 16px;
   }
