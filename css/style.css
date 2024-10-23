@@ -287,8 +287,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   transform: rotateX(0deg);
 }
 .navbar-brand img{
-  width: 100%;
-  height: 13rem;
+  width: 100%;  
 }
 /* Header Logo Area */
 .header_logo_area {
@@ -729,7 +728,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .welcome_area .welcome_content_aera {
   background: url("../images/factroy.png") no-repeat right bottom;
   padding-left: 55px;
-  background-position: center right;
+  background-position: bottom right;
   background-size: contain;
 }
 .welcome_area .welcome_content_aera .welcome_content {
@@ -1148,7 +1147,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .about_company_area {
   display: block;
   overflow: hidden;
-  padding-top: 100px;
+  /* padding-top: 100px; */
   background: url("../images/about-shep.png") no-repeat left bottom;
 }
 .about_company_area .about_company {
@@ -3264,7 +3263,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   .header_logo_area .header_logo_inner .navbar-brand {
     display: block;
     text-align: center;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     margin: 0;
   }
 
@@ -3757,3 +3756,6 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 /* Font family link */
 
 /*# sourceMappingURL=style.css.map */
+.smrow-gap-5{
+  row-gap: 2rem;
+}
