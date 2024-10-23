@@ -91,6 +91,9 @@ Table of Content:
 .w-30{
   width: 30%;
 }
+.w-10{
+  width: 10%;
+}
 /* Button Style */
 .theme_btn {
   color: #fff;
@@ -735,17 +738,17 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .welcome_area .welcome_content_aera h2 {
   color: #272727;
-  font: 700 48px/56px "Muli", sans-serif;
+  font: 700 34px/56px "Muli", sans-serif;
   position: relative;
   padding-top: 25px;
 }
 .welcome_area .welcome_content_aera h2:after {
   content: "GSC";
-  font: 700 110px/1 "Dancing Script", cursive;
+  font: 700 110px / 1 "Dancing Script", cursive;
   color: #f0f0f0;
   position: absolute;
-  left: 96px;
-  top: 43px;
+  left: 145px;
+  top: -57px;
   text-align: center;
   z-index: -1;
 }
@@ -760,9 +763,9 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   max-width: 100%;
 }
 .welcome_area .welcome_content_aera h4 {
-  font: 700 24px/36px "Muli", sans-serif;
+  font: 700 24px / 36px "Muli", sans-serif;
   color: #272727;
-  padding: 50px 0 25px;
+  padding: 30px 0 25px;
 }
 .welcome_area .welcome_content_aera h4 i:before {
   color: #f9520b;
@@ -773,7 +776,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .welcome_area .welcome_content_aera .factory_p {
   max-width: 550px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 .welcome_area .welcome_content_aera a {
   font: 600 16px/60px "Muli", sans-serif;
@@ -1159,7 +1162,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   padding-bottom: 40px;
 }
 .about_company_area h2 {
-  font: 700 48px/55px "Muli", sans-serif;
+  font: 700 40px/55px "Muli", sans-serif;
   color: #272727;
 }
 .about_company_area p {
@@ -1175,7 +1178,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .about_company_area .company_img {
   text-align: right;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 .about_company_area .company_img img {
   max-width: 100%;
