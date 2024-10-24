@@ -678,8 +678,9 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   background: url("../images/banner-bg.jpg") no-repeat center;
   position: relative;
   z-index: 1;
-  padding: 180px 0 155px;
-  margin-top: 36px;
+  padding: 85px 0 155px;
+  margin-block: 36px;
+  height: 1rem;
 }
 .banner_area:after {
   content: "";
@@ -1153,7 +1154,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .about_company_area .about_company {
   max-width: 585px;
   float: right;
-  padding-top: 75px;
+  /* padding-top: 75px; */
 }
 .about_company_area h4 {
   font: 400 21px/36px "Muli", sans-serif;
@@ -3115,7 +3116,11 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   display: none !important;
 }
 #slide-3-layer-3{
-  margin-top: 2rem !important;
+  margin-top: 0.1rem !important;
+  font-size: 16px;
+}
+.header_top_inner.row .col-md-8{
+  display: none !important;
 }
   
   .header_logo_area .header_logo_inner .right_info {
@@ -3482,7 +3487,7 @@ font-size: 16px !important;
   }
 
   .welcome_area {
-    padding-top: 100px;
+    padding-top: 20px;
   }
   .welcome_area .welcome_content_aera h2 {
     font-size: 25px;
@@ -3534,7 +3539,7 @@ font-size: 16px !important;
   }
 
   .banner_area {
-    padding: 150px 0 110px;
+    padding: 110px 0 110px;
   }
   .banner_area h2 {
     font-size: 35px;
