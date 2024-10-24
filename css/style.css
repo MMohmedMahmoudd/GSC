@@ -1152,7 +1152,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   background: url("../images/about-shep.png") no-repeat left bottom;
 }
 .about_company_area .about_company {
-  max-width: 585px;
+  max-width: 785px;
   float: right;
   /* padding-top: 75px; */
 }
