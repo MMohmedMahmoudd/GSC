@@ -3002,6 +3002,9 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   padding: 50px 0;
   border-top: 1px solid #e5e5e5;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer_area .copy_right .receive_email {
   float: right;
