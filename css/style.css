@@ -3144,6 +3144,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 
   .welcome_area .welcome_content_aera .welcome_content {
     padding-left: 0;
+    margin-top: 40px;
   }
 
   .about_company_area .about_company {
@@ -3241,10 +3242,11 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 @media (max-width: 991px) {
   .navbar-brand img{
-    width: 30%;
-    height: 7rem;
+    width: 30% !important;
 }
-
+.main_slider_area #main_slider .slider_sm_heding {
+font-size: 16px !important;
+}
   .header_top_area .contact_number li a {
     font-size: 16px;
   }
@@ -3417,7 +3419,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   }
 
   .cia_2 {
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .industries_singl_area {
