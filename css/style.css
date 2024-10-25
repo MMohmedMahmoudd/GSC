@@ -575,7 +575,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   color: #fff;
   font-family: "Muli", sans-serif;
   position: relative;
-  padding: 10px 0 !important;
+  padding: 20px 0 !important;
 }
 .main_slider_area #main_slider .theme_btn {
   line-height: 51px;
@@ -3119,6 +3119,13 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   margin-top: 0.1rem !important;
   font-size: 16px;
 }
+#slide-1-layer-5{
+top: 0 !important;
+}
+#slide-1-layer-4{
+  top: 0 !important;
+
+}
 .header_top_inner.row .col-md-8{
   display: none !important;
 }
@@ -3588,6 +3595,9 @@ font-size: 16px !important;
 @media (max-width: 575px) {
   .main_header_area .header_menu .search_button_content .search_dropbown .dropdown-menu {
     margin-left: -43px !important;
+  }
+  #slide-1-layer-3{
+    padding: 10px !important;
   }
 
   .slider_carousel .media .popup-youtube {
