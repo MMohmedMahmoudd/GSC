@@ -1,6 +1,6 @@
 <?php
 
-    $to = "snappy_info@gmail.com"; //Resived mail here
+    $to = "info@globalchem-eg.com "; //Resived mail here
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $phone = $_REQUEST['phone'];
