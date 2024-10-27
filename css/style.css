@@ -747,6 +747,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .welcome_area .welcome_content_aera .sub_p {
   color: #0077b5;
+  
   font-size: 21px;
   line-height: 31px;
   padding: 40px 0 20px;
