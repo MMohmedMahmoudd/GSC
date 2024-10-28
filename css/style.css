@@ -347,7 +347,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .header_logo_area .header_logo_inner .right_info .header_social li a {
   font-size: 18px;
-  color: #838383;
+  color: #3D8BF2;
 }
 .header_logo_area .header_logo_inner .right_info .header_social li a i:before {
   speak: none;
@@ -359,7 +359,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   animation: TopToBottom 0.3s forwards;
 }
 .header_logo_area .header_logo_inner .right_info .header_social li a:hover, .header_logo_area .header_logo_inner .right_info .header_social li a:focus {
-  color: #27538C;
+  color: #162840;
 }
 .header_logo_area .header_logo_inner .right_info .header_social li a:hover i:before, .header_logo_area .header_logo_inner .right_info .header_social li a:focus i:before {
   animation: BottomToTop 0.3s forwards;
