@@ -145,6 +145,7 @@ Table of Content:
 /*Prefix Styles*/
 body {
   font-family: "Muli", sans-serif;
+  width: 100%;
   /*Section Fix*/
   /*Ancore*/
 }
@@ -447,12 +448,6 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   }
 }
 /* Set container to 100% width */
-.container {
-  width: 100% !important;
-  max-width: 100% !important;
-  padding-left: 0;
-  padding-right: 0;
-}
 
 
 @media (min-width: 991px) {
