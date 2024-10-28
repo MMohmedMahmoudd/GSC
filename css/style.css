@@ -380,6 +380,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .main_header_area .header_menu .navbar {
   padding: 0;
+  width: 100%;
 }
 .main_header_area .header_menu .navbar .navbar_supported ul {
   width: 100%;
@@ -3334,10 +3335,6 @@ font-size: 16px !important;
     max-height: 370px;
     overflow-y: auto;
     padding-left: 0 !important;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-
   }
   .main_header_area .header_menu .navbar .navbar-nav li {
     border-bottom: 1px solid #e3e3e3;
@@ -3825,4 +3822,13 @@ img {
     flex-direction: column;
     align-items: center;
   }
+}
+ul.navbar-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.navbar_supported{
+  width: 75%;
 }
