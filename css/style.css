@@ -2960,7 +2960,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .footer_area .footer_inner .footer_logo .footer_social li a {
   display: inline-block;
-  color: #b3b3b3;
+  color: #27538C;
   font-size: 17px;
 }
 .footer_area .footer_inner .footer_logo .footer_social li a i:before {
@@ -2973,7 +2973,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   animation: TopToBottom 0.3s forwards;
 }
 .footer_area .footer_inner .footer_logo .footer_social li a:hover, .footer_area .footer_inner .footer_logo .footer_social li a:focus {
-  color: #27538C;
+  color: #3D8BF2;
 }
 .footer_area .footer_inner .footer_logo .footer_social li a:hover i:before, .footer_area .footer_inner .footer_logo .footer_social li a:focus i:before {
   animation: BottomToTop 0.3s forwards;
@@ -2998,10 +2998,10 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   color: #27538C !important;
 }
 .footer_area .footer_inner .fw_2 {
-  padding-left: 10px;
+  padding: 0;
 }
 .footer_area .footer_inner .fw_3 {
-  padding-left: 40px;
+  padding: 0;
 }
 .footer_area .copy_right {
   padding: 50px 0;
