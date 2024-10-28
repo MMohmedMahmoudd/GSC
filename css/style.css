@@ -3083,6 +3083,21 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 
 /*----------------------------------------------------*/
+@media (max-width: 3000px) {
+  .fetured_project_area .fetured_project {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .fetured_project_area .fetured_project .project .project_content {
+    padding: 45px 15px;
+  }
+
+  .testimonial_area .carousel-indicators {
+    right: 50px;
+    left: auto;
+    margin: 0;
+  }
+}
 @media (max-width: 1440px) {
   .fetured_project_area .fetured_project {
     padding-left: 15px;
