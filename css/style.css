@@ -437,6 +437,24 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   left: 25px;
   color: #fff;
 }
+@media (max-width: 1024px) {
+  .header_top_area, .header_logo_area, .main_header_area {
+    padding: 20px;
+    text-align: center;
+  }
+  .header_logo_area .header_logo_inner .right_info {
+    padding-left: 0;
+  }
+}
+/* Set container to 100% width */
+.container {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
 @media (min-width: 991px) {
   .main_header_area .header_menu .navbar .navbar_supported ul li.dropdown .dropdown-menu {
     position: absolute;
