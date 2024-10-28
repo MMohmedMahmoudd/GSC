@@ -3334,6 +3334,10 @@ font-size: 16px !important;
     max-height: 370px;
     overflow-y: auto;
     padding-left: 0 !important;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
   }
   .main_header_area .header_menu .navbar .navbar-nav li {
     border-bottom: 1px solid #e3e3e3;
