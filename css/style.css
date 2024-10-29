@@ -819,7 +819,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 /* fetures_area */
 .fetures_area {
   background: url("../images/fetures-bg.png") no-repeat left bottom;
-  padding: 140px 0 120px;
+  padding: 0 ;
   background-size: contain;
 }
 .fetures_area .fetures {
