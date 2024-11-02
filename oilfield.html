@@ -167,11 +167,10 @@
     /* FILTERING RULES
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     [value="All"]:checked ~ .filters [for="All"],
-    [value="Alcohols"]:checked ~ .filters [for="Alcohols"],
-    [value="Ketones"]:checked ~ .filters [for="Ketones"],
-    [value="Esters"]:checked ~ .filters [for="Esters"],
-    [value="Hydrocarbons"]:checked ~ .filters [for="Hydrocarbons"],
-    [value="Ink_Solvents"]:checked ~ .filters [for="Ink_Solvents"]
+    [value="Petroleum"]:checked ~ .filters [for="Petroleum"],
+    [value="GasProcessing"]:checked ~ .filters [for="GasProcessing"],
+    [value="OilandGasPipeline"]:checked ~ .filters [for="OilandGasPipeline"],
+    [value="MaintenanceCleaning"]:checked ~ .filters [for="MaintenanceCleaning"]
  {
       background: var(--blue);
       color: var(--white);
@@ -181,11 +180,11 @@
       display: block;
     }
     
-    [value="Alcohols"]:checked ~ .posts .post:not([data-category~="Alcohols"]),
-    [value="Ketones"]:checked ~ .posts .post:not([data-category~="Ketones"]),
-    [value="Esters"]:checked ~ .posts .post:not([data-category~="Esters"]),
-    [value="Hydrocarbons"]:checked ~ .posts .post:not([data-category~="Hydrocarbons"]),
-    [value="Ink_Solvents"]:checked ~ .posts .post:not([data-category~="Ink_Solvents"]) {
+    [value="Petroleum"]:checked ~ .posts .post:not([data-category~="Petroleum"]),
+    [value="GasProcessing"]:checked ~ .posts .post:not([data-category~="GasProcessing"]),
+    [value="OilandGasPipeline"]:checked ~ .posts .post:not([data-category~="OilandGasPipeline"]),
+    [value="MaintenanceCleaning"]:checked ~ .posts .post:not([data-category~="MaintenanceCleaning"])
+     {
       display: none;
     }
     
@@ -277,46 +276,45 @@
     <!-- Header Area -->
     <header class="main_header_area"> 
         <div class="container">
-             <div class="header_menu"> 
-                 <nav class="navbar navbar-expand-lg"> 
-                     <!-- Small Divice Menu-->
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar_supported"  aria-expanded="false" aria-label="Toggle navigation"> 
-                         <i class="fa fa-bars" aria-hidden="true"></i>
-                     </button>
- 
-                     <div class="collapse navbar-collapse navbar_supported">
-                         <ul class="navbar-nav"> 
-                             <li><a class="nav-link active" href="index.html">Home</a></li>  
-                             <li class="dropdown">
-                                 <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-expanded="false">Products<i class="fa fa-caret-down"></i></a>
-                                 <ul class="dropdown-menu">
-                                     <li class="dropdown"><a class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Detergents</a>
-                                         <ul class="dropdown-menu">
-                                             <li><a class="dropdown-item" href="Industrialdetergents.html">Industrial Detergents</a></li>
-                                             <li><a class="dropdown-item" href="industries-2.html">Household Detergents</a></li>
-                                         </ul>    
-                                     </li> 
-                                     <li><a class="nav-link" href="industries.html">Solvents</a>
-                                     </li> 
-                                     <li><a href="Thinners.html">Thinners</a></li> 
-                                     <li><a href="special.html">Special Detergents</a></li> 
-                                     <li><a href="oilfield.html">Oilfield Chemicals</a></li> 
-                                 </ul>
-                             </li>  
-                             <li><a class="nav-link" href="about.html">About Us</a></li>  
-                             <li><a class="nav-link" href="contact.html">Contact us</a></li>  
-                         </ul>  
-                     </div>
-                 </nav> 
-            </div>
-         </div>
-     </header>
-     <!-- Header Area -->  
+            <div class="header_menu"> 
+                <nav class="navbar navbar-expand-lg"> 
+                    <!-- Small Divice Menu-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar_supported"  aria-expanded="false" aria-label="Toggle navigation"> 
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <div class="collapse navbar-collapse navbar_supported">
+                        <ul class="navbar-nav"> 
+                            <li><a class="nav-link active" href="index.html">Home</a></li>  
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-expanded="false">Products<i class="fa fa-caret-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown"><a class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Detergents</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="Industrialdetergents.html">Industrial Detergents</a></li>
+                                            <li><a class="dropdown-item" href="industries-2.html">Household Detergents</a></li>
+                                        </ul>    
+                                    </li> 
+                                    <li><a class="nav-link" href="Solvents.html">Solvents</a>
+                                    </li> 
+                                    <li><a href="Thinners.html">Thinners</a></li> 
+                                    <li><a href="special.html">Special Detergents</a></li> 
+                                    <li><a href="oilfield.html">Oilfield Chemicals</a></li> 
+                                </ul>
+                            </li>  
+                            <li><a class="nav-link" href="about.html">About Us</a></li>  
+                            <li><a class="nav-link" href="contact.html">Contact us</a></li>  
+                        </ul>  
+                    </div>
+                </nav> 
+        </div>
+        </div>
+    </header>
+    <!-- Header Area -->  
     
     <!-- Banner Area --> 
     <section class="banner_area">
         <div class="container">
-          <h2>Solvents at GSC</h2>
+        <h2>GSC Oilfield Chemicals</h2>
         </div>
     </section>  
     <!-- End Banner Area --> 
@@ -329,317 +327,182 @@
         <section class="author-archive">
             <div class="container">
                 <div class="parent">
-                    <p>At GSC, we offer a comprehensive range of solvents engineered to meet the diverse needs of various industries. Our high-quality solvents are essential for applications in coatings, cleaning, chemical processing, and ink production. Each category of solvents is specifically formulated to deliver effective performance, ensuring precision and reliability across sectors such as manufacturing, printing, and more.</p>
+                    <p>At GSC, our oilfield chemicals are specifically formulated to support efficient oil and gas extraction, processing, and maintenance. We provide targeted solutions for petroleum processing, gas processing, pipeline care, and cleaning, ensuring optimal performance in demanding oilfield environments.</p>
                 </div>
-              <input type="radio" id="All" name="categories" value="All" checked>
-              <input type="radio" id="Alcohols" name="categories" value="Alcohols">
-              <input type="radio" id="Ketones" name="categories" value="Ketones">
-              <input type="radio" id="Esters" name="categories" value="Esters">
-              <input type="radio" id="Hydrocarbons" name="categories" value="Hydrocarbons">
-              <input type="radio" id="Ink_Solvents" name="categories" value="Ink_Solvents">
-          
-              <ol class="filters">
+            <input type="radio" id="All" name="categories" value="All" checked>
+            <input type="radio" id="Petroleum" name="categories" value="Petroleum" checked>
+            <input type="radio" id="GasProcessing" name="categories" value="GasProcessing">
+            <input type="radio" id="OilandGasPipeline" name="categories" value="OilandGasPipeline">
+            <input type="radio" id="MaintenanceCleaning" name="categories" value="MaintenanceCleaning">
+            <ol class="filters">
                 <li>
-                  <label for="All">All</label>
+                <label for="All">All</label>
                 </li>
                 <li>
-                  <label for="Alcohols">Alcohols</label>
+                <label for="Petroleum">Petro Additives</label>
                 </li>
                 <li>
-                  <label for="Ketones">Ketones</label>
+                <label for="GasProcessing">Gas Processing</label>
                 </li>
                 <li>
-                  <label for="Esters">Esters</label>
+                <label for="OilandGasPipeline">Oil and Gas Pipeline</label>
                 </li>
                 <li>
-                  <label for="Hydrocarbons">Hydrocarbons</label>
-                </li>
-                <li>
-                  <label for="Ink_Solvents">Ink Solvents</label>
+                  <label for="MaintenanceCleaning">Maintenance & Cleaning</label>
                 </li>
               </ol>
           
               <ol class="posts">
-                <li class="post" data-category="Alcohols">
+                <li class="post" data-category="Petroleum">
                   <article>
                     <figure>
                       <figcaption>
                         <ol class="post-categories">
                           <li>
-                            <a >Alcohols</a>
+                            <a >Petroleum</a>
                           </li>
                         </ol>
-                        <h2 class="post-title">Methanol</h2>
-                        <P> An essential solvent in chemical synthesis and fuel industries.</P>
-
+                        <h2 class="post-title">Acid Stimulation Additives</h2>
+                        <P> Improve permeability and enhance oil flow.</P>
                       </figcaption>
                     </figure>
                   </article>
                 </li>
-                <li class="post" data-category="Alcohols">
+                <li class="post" data-category="Petroleum">
                   <article>
                     <figure>
                       <figcaption>
                         <ol class="post-categories">
                           <li>
-                            <a >Alcohols</a>
+                            <a >Petroleum</a>
                           </li>
                         </ol>
-                        <h2 class="post-title">Ethanol</h2>
-                        <P>A highly effective solvent used in coatings, sanitizers, and cosmetics.</P>
+                        <h2 class="post-title">Cementing Additives</h2>
+                        <P>(e.g., Liquid Defoamer): Ensure strong cement bonds and prevent foaming.</P>
                       </figcaption>
                     </figure>
                   </article>
                 </li>
-                <li class="post" data-category="Alcohols">
+                <li class="post" data-category="Petroleum">
                   <article>
                     <figure>
                       <figcaption>
                         <ol class="post-categories">
                           <li>
-                            <a>Alcohols</a>
+                            <a>Petroleum</a>
                           </li>
                         </ol>
-                        <h2 class="post-title">IPA (Isopropanol)</h2>
-                        <p> Commonly used in cleaning and disinfecting applications.</p>
+                        <h2 class="post-title">Biocide</h2>
+                        <p>  Controls bacterial growth and preserves well conditions.</p>
                       </figcaption>
                     </figure>
                   </article>
                 </li>
-                <li class="post" data-category="Alcohols">
+                <li class="post" data-category="Petroleum">
                   <article>
                     <figure>
                       <figcaption>
                         <ol class="post-categories">
                           <li>
-                            <a >Alcohols</a>
+                            <a >Petroleum</a>
                           </li>
                         </ol>
-                        <h2 class="post-title">Iso-butanol</h2>
-                        <p>Suitable for coatings and used as a solvent in various formulations.</p>
+                        <h2 class="post-title">Solvents</h2>
+                        <p>(e.g., Xylene Mix): Aid in cleaning and dissolving deposits.</p>
                       </figcaption>
                     </figure>
                   </article>
                 </li>
-                <li class="post" data-category="Ketones">
-                  <article>
-                    <figure>
-
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Ketones</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Acetone</h2>
-                        <p>Known for its quick-drying properties, commonly used in coatings and cleaning.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Ketones">
+                <li class="post" data-category="GasProcessing">
                   <article>
                     <figure>
 
                       <figcaption>
                         <ol class="post-categories">
                           <li>
-                            <a >Ketones</a>
+                            <a >Gas Processing</a>
                           </li>
                         </ol>
-                        <h2 class="post-title">MEK (Methyl Ethyl Ketone)</h2>
-                        <p>An industrial solvent ideal for use in coatings and adhesives.</p>
+                        <h2 class="post-title">Gas Dehydrant</h2>
+                        <p>(e.g., Mutual Solvent): Removes moisture and prevents gas line blockages.</p>
                       </figcaption>
                     </figure>
                   </article>
                 </li>
-                <li class="post" data-category="Ketones">
+                <li class="post" data-category="GasProcessing">
+                  <article>
+                    <figure>
+
+                      <figcaption>
+                        <ol class="post-categories">
+                          <li>
+                            <a >Gas Processing</a>
+                          </li>
+                        </ol>
+                        <h2 class="post-title">pH Buffer</h2>
+                        <p>Stabilizes pH levels to protect gas processing equipment.</p>
+                      </figcaption>
+                    </figure>
+                  </article>
+                </li>
+                <li class="post" data-category="OilandGasPipeline">
                   <article>
                     <figure>
                       <figcaption>
                         <ol class="post-categories">
                           <li>
-                            <a >Ketones</a>
+                            <a >Oil and Gas Pipeline</a>
                           </li>
                         </ol>
-                        <h2 class="post-title">Cyclohexanone</h2>
-                        <p>Often used in the production of nylon and other chemical applications</p>
+                        <h2 class="post-title">Biocide</h2>
+                        <p>Inhibits microbial activity that can degrade pipeline materials.</p>
                         </figcaption>
                     </figure>
                   </article>
                 </li>
-                <li class="post" data-category="Esters">
+                <li class="post" data-category="OilandGasPipeline">
                   <article>
                     <figure>
       
                       <figcaption>
                         <ol class="post-categories">
                           <li>
-                            <a href="">Esters</a>
+                            <a href="">Oil and Gas Pipeline</a>
                           </li>
                         </ol>
-                        <h2 class="post-title">Ethyl acetate</h2>
-                        <p>An effective solvent in coatings, inks, and adhesives, known for its rapid evaporation.</p>
+                        <h2 class="post-title">H₂S Scavenger</h2>
+                        <p>Removes hydrogen sulfide to prevent corrosion and improve safety.</p>
                       </figcaption>
                     </figure>
                   </article>
                 </li>
-                <li class="post" data-category="Esters">
+                <li class="post" data-category="MaintenanceCleaning">
                   <article>
                     <figure>
                 
                       <figcaption>
                         <ol class="post-categories">
                           <li>
-                            <a href="">Esters </a>
+                            <a href="">Maintenance & Cleaning </a>
                           </li>
                         </ol>
-                        <h2 class="post-title">Butyl acetate</h2>
-                        <p>Commonly used in the production of lacquers and coatings, offering excellent solubility.</p>
+                        <h2 class="post-title">Descaler</h2>
+                        <p>Dissolves scale buildup for improved equipment efficiency.</p>
                       </figcaption>
                     </figure>
                   </article>
                 </li>
-                <li class="post" data-category="Hydrocarbons">
+                <li class="post" data-category="MaintenanceCleaning">
                   <article>
                     <figure>
-                      
                       <figcaption>
                         <ol class="post-categories">
                           <li>
-                            <a >Hydrocarbons</a>
+                            <a >Maintenance & Cleaning</a>
                           </li>
                         </ol>
-                        <h2 class="post-title">Toluene</h2>
-                        <p> A strong solvent used in coatings, adhesives, and chemical manufacturing.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Hydrocarbons">
-                  <article>
-                    <figure>
-  
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Hydrocarbons</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title"> Mixed xylene</h2>
-                        <p>Effective in paints and coatings due to its solubility and drying properties.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Hydrocarbons">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Hydrocarbons</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Heavy naphtha</h2>
-                        <p>Suitable for industrial applications like petrochemicals and fuel blending.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Hydrocarbons">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Hydrocarbons</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Light naphtha</h2>
-                        <p>Used in fuel and petrochemical processing.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Hydrocarbons">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Hydrocarbons</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Hydrotreated naphtha</h2>
-                        <p> Known for its refined quality, used in fuel production and cleaning.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Hydrocarbons">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Hydrocarbons</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">SPB solvents</h2>
-                        <p>A specialized hydrocarbon solvent blend for coatings and industrial applications.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Ink_Solvents">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Ink Solvents</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Rotogravures ink solvents</h2>
-                        <p> Used in high-quality gravure printing to achieve consistent, sharp colors.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Ink_Solvents">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Ink Solvents</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Flexogravures ink solvents</h2>
-                        <p>Essential for flexographic printing, offering stability and vibrancy.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Ink_Solvents">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a href="">Ink Solvents</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">PVC ink solvents</h2>
-                        <p> Ideal for PVC-based inks, ensuring adhesion and durability.</p>
+                        <h2 class="post-title">Cleaning Solvent</h2>
+                        <p> Removes contaminants from surfaces and machinery.</p>
                       </figcaption>
                     </figure>
                   </article>
@@ -699,7 +562,7 @@
                 <div class="footer_widget fw_2 col-lg-2 col-sm-6 wow fadeIn" data-wow-delay="0.6s">
                     <h4>Products</h4> 
                     <ul class="footer_nav"> 
-                        <li><a href="industries.html">Solvents</a></li>   
+                        <li><a href="Solvents.html">Solvents</a></li>   
                         <li><a href="Thinners.html">Thinners </a></li>   
                         <li><a href="special.html">Special Detergents</a></li>   
                         <li><a href="oilfield.html">Oilfield Chemicals</a></li>   
