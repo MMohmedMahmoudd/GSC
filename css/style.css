@@ -3832,3 +3832,19 @@ ul.navbar-nav{
 .navbar_supported{
   width: 75%;
 }
+h2.House{
+  font-weight: 700;
+  font-size: 3rem;
+}
+p.House{
+  font-size: 1.21223rem;
+}
+div.product{
+  border-radius: 25px !important;
+}
+div.product .factories{
+  border-radius: 25px !important;
+}
+div.product .fetures{
+  border-radius: 25px !important;
+}
