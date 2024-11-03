@@ -335,7 +335,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   color: #272727;
 }
 .header_logo_area .header_logo_inner .right_info .media .media-body h6 {
-  font: 400 15px/26px "Muli", sans-serif;
+  font: 400 14px/26px "Muli", sans-serif;
   color: rgba(0, 0, 0, 0.702);
   padding-top: 10px;
 }
