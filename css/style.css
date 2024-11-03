@@ -94,6 +94,9 @@ Table of Content:
 .w-10{
   width: 10%;
 }
+.w-95{
+  width: 95% !important;
+}
 /* Button Style */
 .theme_btn {
   color: #fff;
