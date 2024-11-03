@@ -9794,7 +9794,9 @@ button.bg-dark:hover {
 .font-italic {
     font-style: italic !important
 }
-
+.row-gap-5{
+    row-gap: 1.5rem;
+}
 .text-white {
     color: #fff !important
 }

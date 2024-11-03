@@ -3848,3 +3848,18 @@ div.product .factories{
 div.product .fetures{
   border-radius: 25px !important;
 }
+.header_logo_area .header_logo_inner .right_info .header_social{
+  display: flex;
+  text-align: right;
+  padding: 0;
+  align-items: center;
+}
+.header_logo_area{
+  padding-top: 20px;
+}
+ol.filters{
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+
+}
