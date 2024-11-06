@@ -91,6 +91,9 @@ Table of Content:
 .w-30{
   width: 30%;
 }
+.w-43{
+  width: 43% !important;
+}
 .w-10{
   width: 10%;
 }
@@ -305,7 +308,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .header_logo_area .header_logo_inner .right_info {
   padding: 0;
-  padding-left: 140px;
+  padding-left: 45px;
 }
 .header_logo_area .header_logo_inner .right_info .media {
   padding: 0;
