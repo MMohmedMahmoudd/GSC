@@ -100,6 +100,27 @@ Table of Content:
 .w-95{
   width: 95% !important;
 }
+.fw-bold{
+  font-weight: bold;
+}
+h2.ourproduct::after{
+content: "";
+position: absolute;
+width: 10rem;
+height: 0.1rem;
+border:2px dashed #0077b5;
+bottom: 20%;
+right: 43%;
+}
+h2.ourproduct::before{
+content: "";
+position: absolute;
+width: 6rem;
+height: 0.1rem;
+border:2px dashed #0077b5;
+bottom: 0%;
+right: 45.5%;
+}
 /* Button Style */
 .theme_btn {
   color: #fff;
