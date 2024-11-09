@@ -103,6 +103,9 @@ Table of Content:
 .fw-bold{
   font-weight: bold;
 }
+h2.ourproduct{
+  position: relative;
+}
 h2.ourproduct::after{
 content: "";
 position: absolute;
