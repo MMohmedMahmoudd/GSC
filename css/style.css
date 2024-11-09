@@ -111,7 +111,7 @@ content: "";
 position: absolute;
 width: 10rem;
 height: 0.1rem;
-border:2px dashed #0077b5;
+border:2px solid #0077b5;
 bottom: 20%;
 right: 43%;
 }
@@ -120,7 +120,7 @@ content: "";
 position: absolute;
 width: 6rem;
 height: 0.1rem;
-border:2px dashed #0077b5;
+border:2px solid #0077b5;
 bottom: 0%;
 right: 45.5%;
 
