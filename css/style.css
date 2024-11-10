@@ -103,6 +103,15 @@ Table of Content:
 .fw-bold{
   font-weight: bold;
 }
+.fs-1{
+  font-size: 1.5rem;
+}
+.bg-tempblue{
+  background-color: #27538C;
+}
+.rounded-5{
+  border-radius: 50px;
+}
 /* Button Style */
 .theme_btn {
   color: #fff;
@@ -604,15 +613,13 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   line-height: 51px;
   min-width: 210px;
   border-radius: 15px;
+  background-color:#27538C ;
   overflow: hidden;
   text-align: center !important;
   border: 2px solid #27538C;
 }
 .main_slider_area #main_slider .theme_btn:hover, .main_slider_area #main_slider .theme_btn:focus {
   border-color: #3c47cd;
-}
-.main_slider_area #main_slider .industrial {
-  background: transparent;
 }
 .main_slider_area .tp-bannertimer {
   height: 4px;
