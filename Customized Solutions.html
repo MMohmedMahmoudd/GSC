@@ -241,7 +241,15 @@
 .posts {
     padding-left: 0;
 }
-
+p.list::before{
+  content: "•";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+p.list{
+  padding-left: 1rem;
+}
     
     </style>
     
@@ -306,7 +314,7 @@
                                      <li><a class="nav-link" href="Solvents.html">Solvents</a>
                                      </li> 
                                      <li><a href="Thinners.html">Thinners</a></li> 
-                                     <li><a href="special.html">Special Detergents</a></li> 
+                                     <li><a href="Customized Solutions.html">Customized Solutions</a></li> 
                                      <li><a href="oilfield.html">Oilfield Chemicals</a></li> 
                                  </ul>
                              </li>  
@@ -323,7 +331,7 @@
     <!-- Banner Area --> 
     <section class="banner_area">
         <div class="container">
-          <h2>Special Detergents </h2>
+          <h2>Customized Solutions </h2>
         </div>
     </section>  
     <!-- End Banner Area --> 
@@ -336,326 +344,52 @@
         <section class="author-archive">
             <div class="container">
                 <div class="parent">
-                    <p>At GSC, we offer a comprehensive range of solvents engineered to meet the diverse needs of various industries. Our high-quality solvents are essential for applications in coatings, cleaning, chemical processing, and ink production. Each category of solvents is specifically formulated to deliver effective performance, ensuring precision and reliability across sectors such as manufacturing, printing, and more.</p>
+                    <p>At GSC, we know that every industry faces unique challenges—and a one-size-fits-all approach isn’t always enough. That’s why we offer Customized Solutions to meet the specific needs of each client. With decades of expertise in industrial chemicals, we specialize in formulating products tailored to the exact requirements of your applications, whether for manufacturing, oilfield services, cleaning, or specialized industrial processes.</p>
                 </div>
-              <input type="radio" id="All" name="categories" value="All" checked>
-              <input type="radio" id="Alcohols" name="categories" value="Alcohols">
-              <input type="radio" id="Ketones" name="categories" value="Ketones">
-              <input type="radio" id="Esters" name="categories" value="Esters">
-              <input type="radio" id="Hydrocarbons" name="categories" value="Hydrocarbons">
-              <input type="radio" id="Ink_Solvents" name="categories" value="Ink_Solvents">
-          
-              <ol class="filters row ">
-                <li class="col-sm-6 col-md-4 col-lg-2">
-                  <label for="All">All</label>
-                </li>
-                <li class="col-sm-6 col-md-4 col-lg-2">
-                  <label for="Alcohols">Alcohols</label>
-                </li>
-                <li class="col-sm-6 col-md-4 col-lg-2">
-                  <label for="Ketones">Ketones</label>
-                </li>
-                <li class="col-sm-6 col-md-4 col-lg-2">
-                  <label for="Esters">Esters</label>
-                </li>
-                <li class="col-sm-6 col-md-4 col-lg-2">
-                  <label for="Hydrocarbons">Hydrocarbons</label>
-                </li>
-                <li class="col-sm-6 col-md-4 col-lg-2">
-                  <label for="Ink_Solvents">Ink Solvents</label>
-                </li>
-              </ol>
-          
-              <ol class="posts">
-                <li class="post" data-category="Alcohols">
-                  <article>
-                    <figure>
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Alcohols</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Methanol</h2>
-                        <P> An essential solvent in chemical synthesis and fuel industries.</P>
-
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Alcohols">
-                  <article>
-                    <figure>
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Alcohols</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Ethanol</h2>
-                        <P>A highly effective solvent used in coatings, sanitizers, and cosmetics.</P>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Alcohols">
-                  <article>
-                    <figure>
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a>Alcohols</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">IPA (Isopropanol)</h2>
-                        <p> Commonly used in cleaning and disinfecting applications.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Alcohols">
-                  <article>
-                    <figure>
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Alcohols</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Iso-butanol</h2>
-                        <p>Suitable for coatings and used as a solvent in various formulations.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Ketones">
-                  <article>
-                    <figure>
-
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Ketones</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Acetone</h2>
-                        <p>Known for its quick-drying properties, commonly used in coatings and cleaning.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Ketones">
-                  <article>
-                    <figure>
-
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Ketones</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">MEK (Methyl Ethyl Ketone)</h2>
-                        <p>An industrial solvent ideal for use in coatings and adhesives.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Ketones">
-                  <article>
-                    <figure>
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Ketones</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Cyclohexanone</h2>
-                        <p>Often used in the production of nylon and other chemical applications</p>
-                        </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Esters">
-                  <article>
-                    <figure>
-      
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a>Esters</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Ethyl acetate</h2>
-                        <p>An effective solvent in coatings, inks, and adhesives, known for its rapid evaporation.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Esters">
-                  <article>
-                    <figure>
-                
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a>Esters </a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Butyl acetate</h2>
-                        <p>Commonly used in the production of lacquers and coatings, offering excellent solubility.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Hydrocarbons">
-                  <article>
-                    <figure>
-                      
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Hydrocarbons</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Toluene</h2>
-                        <p> A strong solvent used in coatings, adhesives, and chemical manufacturing.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Hydrocarbons">
-                  <article>
-                    <figure>
-  
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Hydrocarbons</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title"> Mixed xylene</h2>
-                        <p>Effective in paints and coatings due to its solubility and drying properties.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Hydrocarbons">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Hydrocarbons</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Heavy naphtha</h2>
-                        <p>Suitable for industrial applications like petrochemicals and fuel blending.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Hydrocarbons">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Hydrocarbons</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Light naphtha</h2>
-                        <p>Used in fuel and petrochemical processing.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Hydrocarbons">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Hydrocarbons</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Hydrotreated naphtha</h2>
-                        <p> Known for its refined quality, used in fuel production and cleaning.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Hydrocarbons">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Hydrocarbons</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">SPB solvents</h2>
-                        <p>A specialized hydrocarbon solvent blend for coatings and industrial applications.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Ink_Solvents">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Ink Solvents</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Rotogravures ink solvents</h2>
-                        <p> Used in high-quality gravure printing to achieve consistent, sharp colors.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Ink_Solvents">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Ink Solvents</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Flexogravures ink solvents</h2>
-                        <p>Essential for flexographic printing, offering stability and vibrancy.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Ink_Solvents">
-                  <article>
-                    <figure>
-                    
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Ink Solvents</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">PVC ink solvents</h2>
-                        <p> Ideal for PVC-based inks, ensuring adhesion and durability.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-              </ol>
             </div>
           </section>
-    
     </section> 
+    <section class="welcome_area">
+      <div class="row ">
+          <div class="col-lg-6">
+              <div class="welcome_img"> 
+                  <img class="w-100" src="images/b3.jpg" alt=""> 
+              </div>
+          </div>
+          <div class="col-lg-6 welcome_content_aera ">
+              <div class="welcome_content"> 
+                   <h2>Our Approach to Customized Solutions.</h2>
+                   <p class="sub_p">When you choose GSC for your custom chemical needs, you partner with a team of dedicated chemists and industry professionals. Our process is straightforward yet thorough, designed to deliver solutions that meet the highest standards of quality, safety, and effectiveness. Here’s how it works:</p>
+                   <h2>1. Understanding Your Needs</h2>
+                   <p>We begin with a comprehensive consultation to understand your product requirements, application details, and performance expectations. This ensures that our solution aligns with your specific goals </p>
+                   <h2>2. Formulation and Development</h2>
+                   <p>Our experienced chemists go to work, carefully selecting ingredients and creating a formulation that meets your unique specifications. Our team excels at balancing performance, safety, and sustainability in each custom product we create.</p>
+                   <h2>3. Rigorous Testing and Quality Assurance</h2>
+                   <p>Every custom product goes through rigorous testing and quality assurance checks to ensure it performs effectively under your specific conditions. We are committed to delivering consistent, high-quality results in every batch.</p>
+                   <h2>4. Continued Support and Innovation</h2>
+                   <p>Our relationship doesn’t end with delivery. We continue to work alongside you to ensure our solution evolves with your needs, offering modifications and improvements as your industry and applications advance.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="welcome_area">
+      <div class="row smrow-gap-5">
+          <div class="col-lg-6 welcome_content_aera">
+              <div class="welcome_content"> 
+                   <h2>Why Choose GSC for Customized Solutions?</h2>
+                   <p class="position-relative list mb-2"> Industry Expertise: With years of experience in the chemical industry, GSC has the knowledge and resources to develop solutions that perform. </p>
+                   <p class="position-relative list"> Versatile Applications: From degreasers and corrosion inhibitors to specialized solvents and industrial detergents, our custom solutions cover a wide range of needs. </p>
+              </div>
+           </div>
+
+          <div class="col-lg-6">
+             <div class="welcome_img"> 
+              <img class="w-100" src="images/b4.jpg" alt=""> 
+             </div>
+          </div>
+      </div>
+  </section>
+
     <!-- End Fetures Area -->  
      
     <!-- Contact Info Area -->  
@@ -708,7 +442,7 @@
                     <ul class="footer_nav"> 
                         <li><a href="Solvents.html">Solvents</a></li>   
                         <li><a href="Thinners.html">Thinners </a></li>   
-                        <li><a href="special.html">Special Detergents</a></li>   
+                        <li><a href="Customized Solutions.html">Customized Solutions</a></li>   
                         <li><a href="oilfield.html">Oilfield Chemicals</a></li>   
                     </ul>
                 </div> 
