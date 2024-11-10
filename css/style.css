@@ -103,28 +103,6 @@ Table of Content:
 .fw-bold{
   font-weight: bold;
 }
-h2.ourproduct{
-  position: relative;
-}
-h2.ourproduct::after{
-content: "";
-position: absolute;
-width: 10rem;
-height: 0.1rem;
-border:2px solid #0077b5;
-bottom: 20%;
-right: 43%;
-}
-h2.ourproduct::before{
-content: "";
-position: absolute;
-width: 6rem;
-height: 0.1rem;
-border:2px solid #0077b5;
-bottom: 0%;
-right: 45.5%;
-
-}
 /* Button Style */
 .theme_btn {
   color: #fff;
@@ -3320,6 +3298,13 @@ div#slide-4-layer-5{
   .navbar-brand img{
     width: 30% !important;
 }
+.main_header_area .header_menu .navbar .navbar_supported ul li.dropdown .dropdown-menu {
+  display: none;
+}
+.main_header_area .header_menu .navbar .navbar_supported ul li.dropdown.show .dropdown-menu {
+  display: block;
+}
+
 .main_slider_area #main_slider .slider_sm_heding {
 font-size: 16px !important;
 }

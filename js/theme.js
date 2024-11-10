@@ -391,3 +391,14 @@
     preloader (); 
     
 })(jQuery);
+$(document).ready(function() {
+    // Enable dropdown toggle on mobile
+    $('.navbar .dropdown').on('click', function(e) {
+      if (window.innerWidth < 992) {
+        e.stopPropagation();
+        $(this).toggleClass('show');
+        $(this).find('.dropdown-menu').toggleClass('show');
+      }
+    });
+  });
+  
