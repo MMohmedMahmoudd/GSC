@@ -161,6 +161,7 @@
       background: var(--blue);
       color: var(--white);
     }
+
     
     
     /* FILTERING RULES
@@ -187,7 +188,6 @@
     [value="Ink_Solvents"]:checked ~ .posts .post:not([data-category~="Ink_Solvents"]) {
       display: none;
     }
-    
     
     /* FOOTER
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -216,13 +216,41 @@
     font-weight: 600;
 }
     
-    
+.coblue{
+            color:  #27538C;;
+        }
+
+
     /* MQ
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     
-    @media screen and (min-width: 1200px) {
+    .filters{
+    padding-left: 0;
+}
+.posts {
+    padding-left: 0;
+}
+ol.filters{
+  border: 1PX solid #27538C;
+  border-radius: 30PX;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 15rem;
+}
+.posts li.post{
+  transition: all 0.5s;
+}
+  .posts li.post:hover, .filters li.post:focus{
+        background: #27538C;
+        color: white !important;
+        p{
+          color: white ;
+
+        }
+}
+@media screen and (min-width: 1200px) {
       ol.filters{
-        height: 35rem;
+        height: 35rem !important;
       }
 
     }
@@ -232,7 +260,7 @@
       }
       ol.filters{
         flex-direction: row !important;
-        height: 35rem;
+        height: 14rem !important;
       }
 
     }
@@ -245,28 +273,11 @@
         grid-template-columns: repeat(1, 2fr);
       }
     }
-    .filters{
-    padding-left: 0;
-}
-.posts {
-    padding-left: 0;
-}
-ol.filters{
-  border: 1PX solid #27538C;
-  border-radius: 30PX;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-    
+
+
     </style>
-    
 </head>
 <body> 
-
-    <!-- Header Top Area -->
-    <!-- Header Top Area --> 
-    
-    <!-- Header Logo Area -->
     <div class="header_logo_area"> 
         <div class="container">  
             <div class="header_logo_inner row">
@@ -361,26 +372,26 @@ ol.filters{
                   <input type="radio" id="Hydrocarbons" name="categories" value="Hydrocarbons">
                   <input type="radio" id="Ink_Solvents" name="categories" value="Ink_Solvents">
               
-                  <ol class="filters row flex-column col-sm-12 col-md-12 col-lg-2  p-1 ">
+                  <ol class="filters pt-3 row flex-column justify-content-start align-items-start col-sm-12 col-md-12 col-lg-2  p-1 ">
                       <!-- <div class="col ">
                         <span class="fs-1 fw-bold ">Filter by:</span>
                       </div> -->
-                    <li class="col">
-                      <span class="fs-1 fw-bold ">Filter by:</span><label class="border" for="All">All</label>
+                    <li class="col ">
+                      <span class="fs-1 fw-bold coblue">Filter by:</span><label class="border" for="All">All</label>
                     </li>
-                    <li class="col">
+                    <li class="col ">
                       <label class="border" for="Alcohols">Alcohols</label>
                     </li>
-                    <li class="col">
+                    <li class="col ">
                       <label class="border" for="Ketones">Ketones</label>
                     </li>
-                    <li class="col">
+                    <li class="col ">
                       <label class="border" for="Esters">Esters</label>
                     </li>
-                    <li class="col">
+                    <li class="col ">
                       <label class="border" for="Hydrocarbons">Hydrocarbons</label>
                     </li>
-                    <li class="col">
+                    <li class="col ">
                       <label class="border" for="Ink_Solvents">Ink Solvents</label>
                     </li>
                   </ol>

@@ -22,7 +22,7 @@
         :root {
       --black: #3a3a3a;
       --white: #fff;
-      --blue: #3D8BF2;
+      --blue: #27538C;
     }
     
     
@@ -219,10 +219,50 @@
     
     /* MQ
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .filters{
+    padding-left: 0;
+}
+.posts {
+    padding-left: 0;
+}
+ol.filters{
+  border: 1PX solid #27538C;
+  border-radius: 30PX;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 35rem;
+}
+
+.posts li.post{
+  transition: all 0.5s;
+}
+  .posts li.post:hover, .filters li.post:focus{
+        background: #27538C;
+        color: white !important;
+        p{
+          color: white ;
+
+        }
+}
+.coblue{
+            color:  #27538C;;
+        }
+        @media screen and (min-width: 1200px) {
+      ol.filters{
+        height: 35rem !important;
+      }
+
+    }
+
     @media screen and (max-width: 900px) {
       .posts {
         grid-template-columns: repeat(3, 1fr);
       }
+      ol.filters{
+        flex-direction: row !important;
+        height: 15rem !important;
+      }
+
     }
     
     @media screen and (max-width: 650px) {
@@ -234,12 +274,7 @@
         grid-template-columns: repeat(2, 1fr);
       }
     }
-    .filters{
-    padding-left: 0;
-}
-.posts {
-    padding-left: 0;
-}
+
 
     
     </style>
@@ -336,185 +371,188 @@
                 <div class="parent">
                     <p>At GSC, our oilfield chemicals are specifically formulated to support efficient oil and gas extraction, processing, and maintenance. We provide targeted solutions for petroleum processing, gas processing, pipeline care, and cleaning, ensuring optimal performance in demanding oilfield environments.</p>
                 </div>
-            <input type="radio" id="All" name="categories" value="All" checked>
-            <input type="radio" id="Petroleum" name="categories" value="Petroleum" checked>
-            <input type="radio" id="GasProcessing" name="categories" value="GasProcessing">
-            <input type="radio" id="OilandGasPipeline" name="categories" value="OilandGasPipeline">
-            <input type="radio" id="MaintenanceCleaning" name="categories" value="MaintenanceCleaning">
-            <ol class="filters row">
-                <li class="col-sm-6 col-md-4 col-lg-2">
-                <label for="All">All</label>
-                </li>
-                <li class="col-sm-6 col-md-4 col-lg-2">
-                <label for="Petroleum">Petro Additives</label>
-                </li>
-                <li class="col-sm-6 col-md-4 col-lg-2">
-                <label for="GasProcessing">Gas Processing</label>
-                </li>
-                <li class="col-sm-6 col-md-4 col-lg-2">
-                <label for="OilandGasPipeline">Oil and Gas Pipeline</label>
-                </li>
-                <li class="col-sm-6 col-md-4 col-lg-2">
-                  <label for="MaintenanceCleaning">Maintenance & Cleaning</label>
-                </li>
-              </ol>
-          
-              <ol class="posts">
-                <li class="post" data-category="Petroleum">
-                  <article>
-                    <figure>
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Petroleum</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Acid Stimulation Additives</h2>
-                        <P> Improve permeability and enhance oil flow.</P>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Petroleum">
-                  <article>
-                    <figure>
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Petroleum</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Cementing Additives</h2>
-                        <P>(e.g., Liquid Defoamer): Ensure strong cement bonds and prevent foaming.</P>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Petroleum">
-                  <article>
-                    <figure>
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a>Petroleum</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Biocide</h2>
-                        <p>  Controls bacterial growth and preserves well conditions.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="Petroleum">
-                  <article>
-                    <figure>
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Petroleum</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Solvents</h2>
-                        <p>(e.g., Xylene Mix): Aid in cleaning and dissolving deposits.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="GasProcessing">
-                  <article>
-                    <figure>
-
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Gas Processing</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Gas Dehydrant</h2>
-                        <p>(e.g., Mutual Solvent): Removes moisture and prevents gas line blockages.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="GasProcessing">
-                  <article>
-                    <figure>
-
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Gas Processing</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">pH Buffer</h2>
-                        <p>Stabilizes pH levels to protect gas processing equipment.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="OilandGasPipeline">
-                  <article>
-                    <figure>
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Oil and Gas Pipeline</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Biocide</h2>
-                        <p>Inhibits microbial activity that can degrade pipeline materials.</p>
-                        </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="OilandGasPipeline">
-                  <article>
-                    <figure>
-      
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a>Oil and Gas Pipeline</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">H₂S Scavenger</h2>
-                        <p>Removes hydrogen sulfide to prevent corrosion and improve safety.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="MaintenanceCleaning">
-                  <article>
-                    <figure>
+                <div class="row d-flex justify-content-between">
+                  
+                  <input type="radio" id="All" name="categories" value="All" checked>
+                  <input type="radio" id="Petroleum" name="categories" value="Petroleum" checked>
+                  <input type="radio" id="GasProcessing" name="categories" value="GasProcessing">
+                  <input type="radio" id="OilandGasPipeline" name="categories" value="OilandGasPipeline">
+                  <input type="radio" id="MaintenanceCleaning" name="categories" value="MaintenanceCleaning">
+                  <ol class="filters pt-3 row flex-column justify-content-start align-items-start col-sm-12 col-md-12 col-lg-2  p-1 ">
+                      <li class="col"><span class="fs-1 fw-bold coblue">Filter by:</span>
+                      <label class="border"  for="All">All</label>
+                      </li>
+                      <li class="col">
+                      <label class="border" for="Petroleum">Petro Additives</label>
+                      </li>
+                      <li class="col">
+                      <label class="border" for="GasProcessing">Gas Processing</label>
+                      </li>
+                      <li class="col">
+                      <label class="border" for="OilandGasPipeline">Oil and Gas Pipeline</label>
+                      </li>
+                      <li class="col">
+                        <label class="border" for="MaintenanceCleaning">Maintenance & Cleaning</label>
+                      </li>
+                    </ol>
                 
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a>Maintenance & Cleaning </a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Descaler</h2>
-                        <p>Dissolves scale buildup for improved equipment efficiency.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-                <li class="post" data-category="MaintenanceCleaning">
-                  <article>
-                    <figure>
-                      <figcaption>
-                        <ol class="post-categories">
-                          <li>
-                            <a >Maintenance & Cleaning</a>
-                          </li>
-                        </ol>
-                        <h2 class="post-title">Cleaning Solvent</h2>
-                        <p> Removes contaminants from surfaces and machinery.</p>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </li>
-              </ol>
+                  <ol class="posts col-sm-12 col-md-12 col-lg-10">
+                    <li class="post" data-category="Petroleum">
+                      <article>
+                        <figure>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a >Petroleum</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">Acid Stimulation Additives</h2>
+                            <P> Improve permeability and enhance oil flow.</P>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="Petroleum">
+                      <article>
+                        <figure>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a >Petroleum</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">Cementing Additives</h2>
+                            <P>(e.g., Liquid Defoamer): Ensure strong cement bonds and prevent foaming.</P>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="Petroleum">
+                      <article>
+                        <figure>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a>Petroleum</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">Biocide</h2>
+                            <p>  Controls bacterial growth and preserves well conditions.</p>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="Petroleum">
+                      <article>
+                        <figure>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a >Petroleum</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">Solvents</h2>
+                            <p>(e.g., Xylene Mix): Aid in cleaning and dissolving deposits.</p>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="GasProcessing">
+                      <article>
+                        <figure>
+
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a >Gas Processing</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">Gas Dehydrant</h2>
+                            <p>(e.g., Mutual Solvent): Removes moisture and prevents gas line blockages.</p>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="GasProcessing">
+                      <article>
+                        <figure>
+
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a >Gas Processing</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">pH Buffer</h2>
+                            <p>Stabilizes pH levels to protect gas processing equipment.</p>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="OilandGasPipeline">
+                      <article>
+                        <figure>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a >Oil and Gas Pipeline</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">Biocide</h2>
+                            <p>Inhibits microbial activity that can degrade pipeline materials.</p>
+                            </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="OilandGasPipeline">
+                      <article>
+                        <figure>
+          
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a>Oil and Gas Pipeline</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">H₂S Scavenger</h2>
+                            <p>Removes hydrogen sulfide to prevent corrosion and improve safety.</p>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="MaintenanceCleaning">
+                      <article>
+                        <figure>
+                    
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a>Maintenance & Cleaning </a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">Descaler</h2>
+                            <p>Dissolves scale buildup for improved equipment efficiency.</p>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="MaintenanceCleaning">
+                      <article>
+                        <figure>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a >Maintenance & Cleaning</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">Cleaning Solvent</h2>
+                            <p> Removes contaminants from surfaces and machinery.</p>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                  </ol>
+                </div>
             </div>
           </section>
     

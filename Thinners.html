@@ -23,9 +23,12 @@
             :root {
         --black: #3a3a3a;
         --white: #fff;
-        --blue: #3D8BF2;
+        --blue: #27538C;
         }
-        
+        .coblue{
+            color:  #27538C;;
+        }
+
         
         img {
         display: block;
@@ -171,11 +174,11 @@
         [value="SuperThinner"]:checked ~ .filters [for="SuperThinner"],
         [value="NitroThinner"]:checked ~ .filters [for="NitroThinner"],
         [value="U-P(Polyurethane)Thinner"]:checked ~ .filters [for="U-P(Polyurethane)Thinner"],
-        [value="Low-Bake Thinner"]:checked ~ .filters [for="Low-BakeThinner"],
-        [value="ElectrostaticThinner"]:checked ~ .filters [for="ElectrostaticThinner"]
-        [value="EpoxyThinner"]:checked ~ .filters [for="EpoxyThinner"]
-        [value="SyntheticSolvent"]:checked ~ .filters [for="SyntheticSolvent"]
-        [value="WhiteSpirit(W.S.)"]:checked ~ .filters [for="WhiteSpirit(W.S.)"]
+        [value="Low-BakeThinner"]:checked ~ .filters [for="Low-BakeThinner"],
+        [value="ElectrostaticThinner"]:checked ~ .filters [for="ElectrostaticThinner"],
+        [value="EpoxyThinner"]:checked ~ .filters [for="EpoxyThinner"],
+        [value="SyntheticSolvent"]:checked ~ .filters [for="SyntheticSolvent"],
+        [value="WhiteSpirit(W.S.)"]:checked ~ .filters [for="WhiteSpirit(W.S.)"],
         [value="SpecialtyThinnersandMiscellaneousSolvents"]:checked ~ .filters [for="SpecialtyThinnersandMiscellaneousSolvents"]
     {
         background: var(--blue);
@@ -190,6 +193,7 @@
         [value="NitroThinner"]:checked ~ .posts .post:not([data-category~="NitroThinner"]),
         [value="U-P(Polyurethane)Thinner"]:checked ~ .posts .post:not([data-category~="U-P(Polyurethane)Thinner"]),
         [value="Low-BakeThinner"]:checked ~ .posts .post:not([data-category~="Low-BakeThinner"]),
+        [value="ElectrostaticThinner"]:checked ~ .posts .post:not([data-category~="ElectrostaticThinner"]),
         [value="EpoxyThinner"]:checked ~ .posts .post:not([data-category~="EpoxyThinner"]),
         [value="SyntheticSolvent"]:checked ~ .posts .post:not([data-category~="SyntheticSolvent"]),
         [value="WhiteSpirit(W.S.)"]:checked ~ .posts .post:not([data-category~="WhiteSpirit(W.S.)"]),
@@ -229,13 +233,20 @@
         
         /* MQ
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        @media screen and (min-width: 1200px) {
+      ol.filters{
+        flex-direction: row !important;
+        height: 35rem;
+      }
+    }
         @media screen and (max-width: 900px) {
         .posts {
             grid-template-columns: repeat(3, 1fr);
-            padding-left: 0 !important;
+            padding-left: 0 !important; 
         }
-        .filters{
+        ol.filters{
             padding-left: 0 !important;
+            height: 30rem !important;
         }
         }
         
@@ -263,6 +274,23 @@
     border-radius: 25px;
     transition: all 0.3s;
     width: 100%; /* Ensure it takes full width */
+}
+ol.filters{
+  border: 1PX solid #27538C;
+  border-radius: 30PX;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.posts li.post{
+  transition: all 0.5s;
+}
+  .posts li.post:hover, .filters li.post:focus{
+        background: #27538C;
+        color: white !important;
+        p{
+          color: white ;
+
+        }
 }
 
         </style>
@@ -360,331 +388,332 @@
                     <div class="parent">
                         <p>At GSC, we offer a comprehensive range of solvents engineered to meet the diverse needs of various industries. Our high-quality solvents are essential for applications in coatings, cleaning, chemical processing, and ink production. Each category of solvents is specifically formulated to deliver effective performance, ensuring precision and reliability across sectors such as manufacturing, printing, and more.</p>
                     </div>
-                <input type="radio" id="All" name="categories" value="All" checked>
-                <input type="radio" id="SuperThinner" name="categories" value="SuperThinner">
-                <input type="radio" id="NitroThinner" name="categories" value="NitroThinner">
-                <input type="radio" id="U-P(Polyurethane)Thinner" name="categories" value="U-P(Polyurethane)Thinner">
-                <input type="radio" id="Low-BakeThinner" name="categories" value="Low-BakeThinner">
-                <input type="radio" id="ElectrostaticThinner" name="categories" value="ElectrostaticThinner">
-                <input type="radio" id="EpoxyThinner" name="categories" value="EpoxyThinner">
-                <input type="radio" id="SyntheticSolvent" name="categories" value="SyntheticSolvent">
-                <input type="radio" id="WhiteSpirit(W.S.)" name="categories" value="WhiteSpirit(W.S.)">
-                <input type="radio" id="SpecialtyThinnersandMiscellaneousSolvents" name="categories" value="SpecialtyThinnersandMiscellaneousSolvents">
-            
-                <ol class="filters row row-gap-5">
-                    <li class="col-md-2">
-                    <label for="All">All</label>
-                    </li>
-                    <li class="col-md-2">
-                    <label for="SuperThinner">Super Thinner</label>
-                    </li>
-                    <li class="col-md-2">
-                    <label for="NitroThinner">Nitro Thinner</label>
-                    </li>
-                    <li class="col-md-2">
-                    <label for="U-P(Polyurethane)Thinner">U-P (Polyurethane) Thinner</label>
-                    </li>
-                    <li class="col-md-2">
-                    <label for="Low-BakeThinner">Low-Bake Thinner</label>
-                    </li>
-                    <li class="col-md-2">
-                    <label for="ElectrostaticThinner">Electrostatic Thinner</label>
-                    </li>
-                    <li class="col-md-2">
-                    <label for="EpoxyThinner">Epoxy Thinner</label>
-                    </li>
-                    <li class="col-md-2">
-                    <label for="SyntheticSolvent">Synthetic Solvent</label>
-                    </li>
-                    <li class="col-md-2">
-                    <label for="WhiteSpirit(W.S.)">White Spirit (W.S.)</label>
-                    </li>
-                    <li class="col-md-2">
-                    <label for="SpecialtyThinnersandMiscellaneousSolvents">Specialty Thinners and Miscellaneous Solvents</label>
-                    </li>
-                </ol>
-            
-                <ol class="posts ">
-                    <li class="post" data-category="SuperThinner">
-                    <article>
-                        <figure>
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a>SuperThinner</a>
-                            </li>
-                            </ol>
-                            <p>Ideal for diluting nitrocellulose-based varnishes and paints used in automotive, metal, wood, and leather products.</p>
-                            <P> Suitable for thinning wood coatings and polyester varnishes.</P>
-                            <P> Also used for cleaning and preparing metal surfaces before painting.</P>
+                <div class="row d-flex justify-content-between">
+                    <input type="radio" id="All" name="categories" value="All" checked>
+                    <input type="radio" id="SuperThinner" name="categories" value="SuperThinner">
+                    <input type="radio" id="NitroThinner" name="categories" value="NitroThinner">
+                    <input type="radio" id="U-P(Polyurethane)Thinner" name="categories" value="U-P(Polyurethane)Thinner">
+                    <input type="radio" id="Low-BakeThinner" name="categories" value="Low-BakeThinner">
+                    <input type="radio" id="ElectrostaticThinner" name="categories" value="ElectrostaticThinner">
+                    <input type="radio" id="EpoxyThinner" name="categories" value="EpoxyThinner">
+                    <input type="radio" id="SyntheticSolvent" name="categories" value="SyntheticSolvent">
+                    <input type="radio" id="WhiteSpirit(W.S.)" name="categories" value="WhiteSpirit(W.S.)">
+                    <input type="radio" id="SpecialtyThinnersandMiscellaneousSolvents" name="categories" value="SpecialtyThinnersandMiscellaneousSolvents">
+                    <ol class="filters pt-4 mb-0 row justify-content-start align-items-start  col-sm-12 col-md-12 col-lg-4  p-1 ">
+                        <li class="col"><span class="fs-1 fw-bold coblue">Filter by:</span>
+                        <label class="border" for="All">All</label>
+                        </li>
+                        <li class="col">
+                        <label class="border" for="SuperThinner">Super Thinner</label>
+                        </li>
+                        <li class="col">
+                        <label class="border" for="NitroThinner">Nitro Thinner</label>
+                        </li>
+                        <li class="col">
+                        <label class="border" for="U-P(Polyurethane)Thinner">U-P (Polyurethane) Thinner</label>
+                        </li>
+                        <li class="col">
+                        <label class="border" for="Low-BakeThinner">Low-Bake Thinner</label>
+                        </li>
+                        <li class="col">
+                        <label class="border" for="ElectrostaticThinner">Electrostatic Thinner</label>
+                        </li>
+                        <li class="col">
+                        <label class="border" for="EpoxyThinner">Epoxy Thinner</label>
+                        </li>
+                        <li class="col">
+                        <label class="border" for="SyntheticSolvent">Synthetic Solvent</label>
+                        </li>
+                        <li class="col">
+                        <label class="border" for="WhiteSpirit(W.S.)">White Spirit (W.S.)</label>
+                        </li>
+                        <li class="col">
+                        <label class="border" for="SpecialtyThinnersandMiscellaneousSolvents">Specialty Thinners and Miscellaneous Solvents</label>
+                        </li>
+                    </ol>
+                
+                    <ol class="posts col-sm-12 col-md-12 col-lg-8">
+                        <li class="post" data-category="SuperThinner">
+                        <article>
+                            <figure>
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a>SuperThinner</a>
+                                </li>
+                                </ol>
+                                <p>Ideal for diluting nitrocellulose-based varnishes and paints used in automotive, metal, wood, and leather products.</p>
+                                <P> Suitable for thinning wood coatings and polyester varnishes.</P>
+                                <P> Also used for cleaning and preparing metal surfaces before painting.</P>
 
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="NitroThinner">
-                    <article>
-                        <figure>
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Nitro Thinner</a>
-                            </li>
-                            </ol>
-                            <P>Offers similar uses to Super Thinner but features a faster drying time, making it ideal for quick application.</P>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="U-P(Polyurethane)Thinner">
-                    <article>
-                        <figure>
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a>U-P (Polyurethane) Thinner</a>
-                            </li>
-                            </ol>
-                            <p>Specifically designed for polyurethane-based paints and varnishes, ensuring no effect on the integrity of the varnish or paint structure.</p>
-                            <p>Compatible with acrylic-based and polyurethane/acrylic-based varnishes and paints.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="Low-BakeThinner">
-                    <article>
-                        <figure>
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Low-Bake Thinner</a>
-                            </li>
-                            </ol>
-                            <p>Used for paints that require low-temperature curing in ovens (110°C to 130°C), ensuring a smooth and even finish.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="ElectrostaticThinner">
-                    <article>
-                        <figure>
-
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Electrostatic Thinner</a>
-                            </li>
-                            </ol>
-                            <p>Formulated for paints applied with electrostatic spray equipment, offering special electrical resistance for high-bake ovens (140°C to 160°C).</p>
-                            <p>Ideal for specialized industrial coating applications requiring enhanced durability.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="EpoxyThinner">
-                    <article>
-                        <figure>
-
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Epoxy Thinner</a>
-                            </li>
-                            </ol>
-                            <p>Suitable for all applications involving epoxy-based paints and varnishes, providing excellent compatibility and ease of use.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="SyntheticSolvent">
-                    <article>
-                        <figure>
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Synthetic Solvent</a>
-                            </li>
-                            </ol>
-                            <p>Used for diluting alkyd-based paints and varnishes, ideal for wood and metal surfaces applied by brush or spray.</p>
                             </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="WhiteSpirit(W.S.)">
-                    <article>
-                        <figure>
-        
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a>White Spirit (W.S.)</a>
-                            </li>
-                            </ol>
-                            <p>Commonly used with oil-based paints for various applications on wood and metal surfaces, applied by brush or spray for an even finish.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="SpecialtyThinnersandMiscellaneousSolvents">
-                    <article>
-                        <figure>
-                    
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a>Specialty Thinners and Miscellaneous Solvents </a>
-                            </li>
-                            </ol>
-                            <p>Acrylic Paint Thinner: Designed specifically for diluting acrylic-based paints, ensuring smooth application and finish.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <!-- <li class="post" data-category="Hydrocarbons">
-                    <article>
-                        <figure>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="NitroThinner">
+                        <article>
+                            <figure>
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Nitro Thinner</a>
+                                </li>
+                                </ol>
+                                <P>Offers similar uses to Super Thinner but features a faster drying time, making it ideal for quick application.</P>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="U-P(Polyurethane)Thinner">
+                        <article>
+                            <figure>
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a>U-P (Polyurethane) Thinner</a>
+                                </li>
+                                </ol>
+                                <p>Specifically designed for polyurethane-based paints and varnishes, ensuring no effect on the integrity of the varnish or paint structure.</p>
+                                <p>Compatible with acrylic-based and polyurethane/acrylic-based varnishes and paints.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="Low-BakeThinner">
+                        <article>
+                            <figure>
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Low-Bake Thinner</a>
+                                </li>
+                                </ol>
+                                <p>Used for paints that require low-temperature curing in ovens (110°C to 130°C), ensuring a smooth and even finish.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="ElectrostaticThinner">
+                        <article>
+                            <figure>
+
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Electrostatic Thinner</a>
+                                </li>
+                                </ol>
+                                <p>Formulated for paints applied with electrostatic spray equipment, offering special electrical resistance for high-bake ovens (140°C to 160°C).</p>
+                                <p>Ideal for specialized industrial coating applications requiring enhanced durability.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="EpoxyThinner">
+                        <article>
+                            <figure>
+
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Epoxy Thinner</a>
+                                </li>
+                                </ol>
+                                <p>Suitable for all applications involving epoxy-based paints and varnishes, providing excellent compatibility and ease of use.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="SyntheticSolvent">
+                        <article>
+                            <figure>
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Synthetic Solvent</a>
+                                </li>
+                                </ol>
+                                <p>Used for diluting alkyd-based paints and varnishes, ideal for wood and metal surfaces applied by brush or spray.</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="WhiteSpirit(W.S.)">
+                        <article>
+                            <figure>
+            
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a>White Spirit (W.S.)</a>
+                                </li>
+                                </ol>
+                                <p>Commonly used with oil-based paints for various applications on wood and metal surfaces, applied by brush or spray for an even finish.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="SpecialtyThinnersandMiscellaneousSolvents">
+                        <article>
+                            <figure>
                         
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Hydrocarbons</a>
-                            </li>
-                            </ol>
-                            <h2 class="post-title">Toluene</h2>
-                            <p> A strong solvent used in coatings, adhesives, and chemical manufacturing.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="Hydrocarbons">
-                    <article>
-                        <figure>
-    
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Hydrocarbons</a>
-                            </li>
-                            </ol>
-                            <h2 class="post-title"> Mixed xylene</h2>
-                            <p>Effective in paints and coatings due to its solubility and drying properties.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="Hydrocarbons">
-                    <article>
-                        <figure>
-                        
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Hydrocarbons</a>
-                            </li>
-                            </ol>
-                            <h2 class="post-title">Heavy naphtha</h2>
-                            <p>Suitable for industrial applications like petrochemicals and fuel blending.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="Hydrocarbons">
-                    <article>
-                        <figure>
-                        
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Hydrocarbons</a>
-                            </li>
-                            </ol>
-                            <h2 class="post-title">Light naphtha</h2>
-                            <p>Used in fuel and petrochemical processing.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="Hydrocarbons">
-                    <article>
-                        <figure>
-                        
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Hydrocarbons</a>
-                            </li>
-                            </ol>
-                            <h2 class="post-title">Hydrotreated naphtha</h2>
-                            <p> Known for its refined quality, used in fuel production and cleaning.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="Hydrocarbons">
-                    <article>
-                        <figure>
-                        
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Hydrocarbons</a>
-                            </li>
-                            </ol>
-                            <h2 class="post-title">SPB solvents</h2>
-                            <p>A specialized hydrocarbon solvent blend for coatings and industrial applications.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="Ink_Solvents">
-                    <article>
-                        <figure>
-                        
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Ink Solvents</a>
-                            </li>
-                            </ol>
-                            <h2 class="post-title">Rotogravures ink solvents</h2>
-                            <p> Used in high-quality gravure printing to achieve consistent, sharp colors.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="Ink_Solvents">
-                    <article>
-                        <figure>
-                        
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Ink Solvents</a>
-                            </li>
-                            </ol>
-                            <h2 class="post-title">Flexogravures ink solvents</h2>
-                            <p>Essential for flexographic printing, offering stability and vibrancy.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li>
-                    <li class="post" data-category="Ink_Solvents">
-                    <article>
-                        <figure>
-                        
-                        <figcaption>
-                            <ol class="post-categories">
-                            <li>
-                                <a >Ink Solvents</a>
-                            </li>
-                            </ol>
-                            <h2 class="post-title">PVC ink solvents</h2>
-                            <p> Ideal for PVC-based inks, ensuring adhesion and durability.</p>
-                        </figcaption>
-                        </figure>
-                    </article>
-                    </li> -->
-                </ol>
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a>Specialty Thinners and Miscellaneous Solvents </a>
+                                </li>
+                                </ol>
+                                <p>Acrylic Paint Thinner: Designed specifically for diluting acrylic-based paints, ensuring smooth application and finish.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <!-- <li class="post" data-category="Hydrocarbons">
+                        <article>
+                            <figure>
+                            
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Hydrocarbons</a>
+                                </li>
+                                </ol>
+                                <h2 class="post-title">Toluene</h2>
+                                <p> A strong solvent used in coatings, adhesives, and chemical manufacturing.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="Hydrocarbons">
+                        <article>
+                            <figure>
+
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Hydrocarbons</a>
+                                </li>
+                                </ol>
+                                <h2 class="post-title"> Mixed xylene</h2>
+                                <p>Effective in paints and coatings due to its solubility and drying properties.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="Hydrocarbons">
+                        <article>
+                            <figure>
+                            
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Hydrocarbons</a>
+                                </li>
+                                </ol>
+                                <h2 class="post-title">Heavy naphtha</h2>
+                                <p>Suitable for industrial applications like petrochemicals and fuel blending.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="Hydrocarbons">
+                        <article>
+                            <figure>
+                            
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Hydrocarbons</a>
+                                </li>
+                                </ol>
+                                <h2 class="post-title">Light naphtha</h2>
+                                <p>Used in fuel and petrochemical processing.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="Hydrocarbons">
+                        <article>
+                            <figure>
+                            
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Hydrocarbons</a>
+                                </li>
+                                </ol>
+                                <h2 class="post-title">Hydrotreated naphtha</h2>
+                                <p> Known for its refined quality, used in fuel production and cleaning.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="Hydrocarbons">
+                        <article>
+                            <figure>
+                            
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Hydrocarbons</a>
+                                </li>
+                                </ol>
+                                <h2 class="post-title">SPB solvents</h2>
+                                <p>A specialized hydrocarbon solvent blend for coatings and industrial applications.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="Ink_Solvents">
+                        <article>
+                            <figure>
+                            
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Ink Solvents</a>
+                                </li>
+                                </ol>
+                                <h2 class="post-title">Rotogravures ink solvents</h2>
+                                <p> Used in high-quality gravure printing to achieve consistent, sharp colors.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="Ink_Solvents">
+                        <article>
+                            <figure>
+                            
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Ink Solvents</a>
+                                </li>
+                                </ol>
+                                <h2 class="post-title">Flexogravures ink solvents</h2>
+                                <p>Essential for flexographic printing, offering stability and vibrancy.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li>
+                        <li class="post" data-category="Ink_Solvents">
+                        <article>
+                            <figure>
+                            
+                            <figcaption>
+                                <ol class="post-categories">
+                                <li>
+                                    <a >Ink Solvents</a>
+                                </li>
+                                </ol>
+                                <h2 class="post-title">PVC ink solvents</h2>
+                                <p> Ideal for PVC-based inks, ensuring adhesion and durability.</p>
+                            </figcaption>
+                            </figure>
+                        </article>
+                        </li> -->
+                    </ol>
+                </div>
                 <div class="row w-95 mx-auto mt-4">
                     <div class="col">
                         <h3>Why Choose GSC Thinners?</h3>
