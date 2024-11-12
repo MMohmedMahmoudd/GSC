@@ -80,7 +80,7 @@
     /* FILTERS
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .filters {
-      text-align: center;
+      text-align: start;
       margin-bottom: 2rem;
     }
     
@@ -93,7 +93,7 @@
       margin-bottom: 0.25rem;
       border-radius: 2rem;
       min-width: 50px;
-      font-size: 1.3rem;
+      font-size: 1rem;
       font-weight: 600;
       line-height: normal;
       cursor: pointer;
@@ -122,6 +122,8 @@
     
     .posts .post-title {
       font-size: 1.3rem;
+      text-align: center;
+      
     }
     
     .posts .post-title:hover {
@@ -211,7 +213,7 @@
 }
     .parent P{
     font-size: 1.3rem;
-    text-align: start;
+    text-align: center;
     margin-bottom: 1rem;
     font-weight: 600;
 }
@@ -226,15 +228,15 @@
     padding-left: 0;
 }
 ol.filters{
-  border: 1PX solid #27538C;
-  border-radius: 30PX;
-  flex-wrap: wrap;
   flex-direction: column;
-  height: 35rem;
 }
 
 .posts li.post{
   transition: all 0.5s;
+  box-shadow: 0px 0px 5px 3px rgba(143,162,206,0.26);
+-webkit-box-shadow: 0px 0px 5px 3px rgba(143,162,206,0.26);
+-moz-box-shadow: 0px 0px 5px 3px rgba(143,162,206,0.26);
+
 }
   .posts li.post:hover, .filters li.post:focus{
         background: #27538C;
@@ -249,8 +251,12 @@ ol.filters{
         }
         @media screen and (min-width: 1200px) {
       ol.filters{
-        height: 35rem !important;
+        row-gap: 1rem;
+
       }
+      li.All{
+  padding-left: 1.5rem !important;
+}
 
     }
 
@@ -260,7 +266,12 @@ ol.filters{
       }
       ol.filters{
         flex-direction: row !important;
-        height: 15rem !important;
+        justify-content: center !important;
+        align-items: start !important;
+      }
+      .row.parentPosts-filter{
+        justify-content: center !important;
+        align-items: center !important;
       }
 
     }
@@ -273,8 +284,20 @@ ol.filters{
       .posts {
         grid-template-columns: repeat(2, 1fr);
       }
+      ol.filters{
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        column-gap: 0;
+        
+
+      }
+
     }
 
+    figure{
+  margin: 0;
+}
 
     
     </style>
@@ -371,32 +394,31 @@ ol.filters{
                 <div class="parent">
                     <p>At GSC, our oilfield chemicals are specifically formulated to support efficient oil and gas extraction, processing, and maintenance. We provide targeted solutions for petroleum processing, gas processing, pipeline care, and cleaning, ensuring optimal performance in demanding oilfield environments.</p>
                 </div>
-                <div class="row d-flex justify-content-between">
-                  
+                <div class="row parentPosts-filter px-4 d-flex justify-content-between align-items-start">
                   <input type="radio" id="All" name="categories" value="All" checked>
                   <input type="radio" id="Petroleum" name="categories" value="Petroleum" >
                   <input type="radio" id="GasProcessing" name="categories" value="GasProcessing">
                   <input type="radio" id="OilandGasPipeline" name="categories" value="OilandGasPipeline">
                   <input type="radio" id="MaintenanceCleaning" name="categories" value="MaintenanceCleaning">
                   <ol class="filters pt-3 row flex-column justify-content-start align-items-start col-sm-12 col-md-12 col-lg-2  p-1 ">
-                      <li class="col"><span class="fs-1 fw-bold coblue">Filter by:</span>
-                      <label class="border"  for="All">All</label>
+                      <li class="All">
+                      <label class=""  for="All">All</label>
                       </li>
-                      <li class="col">
-                      <label class="border" for="Petroleum">Petro Additives</label>
+                      <li class="">
+                      <label class="" for="Petroleum">Petro Additives</label>
                       </li>
-                      <li class="col">
-                      <label class="border" for="GasProcessing">Gas Processing</label>
+                      <li class="">
+                      <label class="" for="GasProcessing">Gas Processing</label>
                       </li>
-                      <li class="col">
-                      <label class="border" for="OilandGasPipeline">Oil and Gas Pipeline</label>
+                      <li class="">
+                      <label class="" for="OilandGasPipeline">Oil and Gas Pipeline</label>
                       </li>
-                      <li class="col">
-                        <label class="border" for="MaintenanceCleaning">Maintenance & Cleaning</label>
+                      <li class="">
+                        <label class="" for="MaintenanceCleaning">Maintenance & Cleaning</label>
                       </li>
                     </ol>
                 
-                  <ol class="posts col-sm-12 col-md-12 col-lg-10">
+                  <ol class="posts row col-sm-12 col-md-12 col-lg-10 p-0">
                     <li class="post" data-category="Petroleum">
                       <article>
                         <figure>
@@ -407,7 +429,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Acid Stimulation Additives</h2>
-                            <P> Improve permeability and enhance oil flow.</P>
                           </figcaption>
                         </figure>
                       </article>
@@ -422,7 +443,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Cementing Additives</h2>
-                            <P>(e.g., Liquid Defoamer): Ensure strong cement bonds and prevent foaming.</P>
                           </figcaption>
                         </figure>
                       </article>
@@ -437,7 +457,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Biocide</h2>
-                            <p>  Controls bacterial growth and preserves well conditions.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -452,7 +471,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Solvents</h2>
-                            <p>(e.g., Xylene Mix): Aid in cleaning and dissolving deposits.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -468,7 +486,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Gas Dehydrant</h2>
-                            <p>(e.g., Mutual Solvent): Removes moisture and prevents gas line blockages.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -484,7 +501,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">pH Buffer</h2>
-                            <p>Stabilizes pH levels to protect gas processing equipment.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -499,7 +515,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Biocide</h2>
-                            <p>Inhibits microbial activity that can degrade pipeline materials.</p>
                             </figcaption>
                         </figure>
                       </article>
@@ -515,7 +530,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">H₂S Scavenger</h2>
-                            <p>Removes hydrogen sulfide to prevent corrosion and improve safety.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -531,7 +545,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Descaler</h2>
-                            <p>Dissolves scale buildup for improved equipment efficiency.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -546,7 +559,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Cleaning Solvent</h2>
-                            <p> Removes contaminants from surfaces and machinery.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -601,12 +613,12 @@ ol.filters{
                     <h4> Detergents</h4>  
                     <ul class="footer_nav">     
                       <li><a href="Household.html">Household Detergents</a></li>   
-                        <li><a href="Industrialdetergents.html">Industrial Detergents</a></li>   
+                      <li><a href="Industrialdetergents.html">Industrial Detergents</a></li>   
                     </ul>
                 </div>  
                 <div class="footer_widget fw_2 col-lg-2 col-sm-6 wow fadeIn" data-wow-delay="0.6s">
-                    <h4>Products</h4> 
-                    <ul class="footer_nav"> 
+                    <h4>Products</h4>
+                    <ul class="footer_nav">
                         <li><a href="Solvents.html">Solvents</a></li>   
                         <li><a href="Thinners.html">Thinners </a></li>   
                         <li><a href="oilfield.html">Oilfield Chemicals</a></li>   

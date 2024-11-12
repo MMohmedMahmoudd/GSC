@@ -3434,7 +3434,6 @@ font-size: 16px !important;
   }
 
   .fetures_area {
-    padding-top: 50px;
     padding-bottom: 70px;
   }
 
@@ -3886,4 +3885,7 @@ ol.filters{
   justify-content: center;
   column-gap: 2rem;
 
+}
+.ms-5{
+  margin-left: 1.5rem;
 }

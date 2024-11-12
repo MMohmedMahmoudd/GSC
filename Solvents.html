@@ -80,7 +80,7 @@
     /* FILTERS
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .filters {
-      text-align: center;
+      text-align: start;
       margin-bottom: 2rem;
     }
     
@@ -92,7 +92,7 @@
       padding: 0.5rem 1rem;
       margin-bottom: 0.25rem;
       border-radius: 2rem;
-      font-size: 1.3rem;
+      font-size: 1rem;
       font-weight: 600;
       line-height: normal;
       cursor: pointer;
@@ -116,11 +116,15 @@
     
     .posts .post {
       border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 25px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
     }
     
     .posts .post-title {
       font-size: 1.3rem;
+      text-align: center;
     }
     
     .posts .post-title:hover {
@@ -128,7 +132,7 @@
     }
     
     .posts figcaption {
-      padding: 1rem;
+      padding: 0.8rem;
     }
     
     .posts .post-categories {
@@ -205,13 +209,13 @@
     }
     .parent h1{
     font-size: 3rem;
-    text-align: start;
+    text-align: center;
     margin-bottom: 1rem;
     font-weight: 600;
 }
     .parent P{
     font-size: 1.3rem;
-    text-align: start;
+    text-align: center;
     margin-bottom: 1rem;
     font-weight: 600;
 }
@@ -231,14 +235,14 @@
     padding-left: 0;
 }
 ol.filters{
-  border: 1PX solid #27538C;
-  border-radius: 30PX;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 15rem;
 }
 .posts li.post{
   transition: all 0.5s;
+  box-shadow: 0px 0px 5px 3px rgba(143,162,206,0.26);
+-webkit-box-shadow: 0px 0px 5px 3px rgba(143,162,206,0.26);
+-moz-box-shadow: 0px 0px 5px 3px rgba(143,162,206,0.26);
 }
   .posts li.post:hover, .filters li.post:focus{
         background: #27538C;
@@ -248,10 +252,18 @@ ol.filters{
 
         }
 }
+figure{
+  margin: 0;
+}
 @media screen and (min-width: 1200px) {
       ol.filters{
         height: 35rem !important;
+        row-gap: 1rem;
       }
+      li.All{
+  padding-left: 1.5rem !important;
+}
+
 
     }
     @media screen and (max-width: 900px) {
@@ -260,7 +272,14 @@ ol.filters{
       }
       ol.filters{
         flex-direction: row !important;
-        height: 14rem !important;
+        justify-content: center !important;
+        align-items: start !important;
+      }
+      .row.parentPosts-filter{
+        justify-content: center !important;
+        align-items: center !important;
+        column-gap: 0 !important;
+
       }
 
     }
@@ -270,10 +289,20 @@ ol.filters{
         font-size: 14px;
       }
       .posts {
-        grid-template-columns: repeat(1, 2fr);
+        grid-template-columns: repeat(2, 2fr);
       }
-    }
+          ol.filters{
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding-right: 0.5rem !important;
+        padding-left: 2.5rem !important;
+        column-gap: 0 !important;
 
+
+      }
+
+    }
 
     </style>
 </head>
@@ -364,7 +393,7 @@ ol.filters{
                 <div class="parent">
                     <p>At GSC, we offer a comprehensive range of solvents engineered to meet the diverse needs of various industries. Our high-quality solvents are essential for applications in coatings, cleaning, chemical processing, and ink production. Each category of solvents is specifically formulated to deliver effective performance, ensuring precision and reliability across sectors such as manufacturing, printing, and more.</p>
                 </div>
-                <div class="row d-flex justify-content-between">
+                <div class="row parentPosts-filter px-4 d-flex justify-content-between align-items-start">
                   <input type="radio" id="All" name="categories" value="All" checked>
                   <input type="radio" id="Alcohols" name="categories" value="Alcohols">
                   <input type="radio" id="Ketones" name="categories" value="Ketones">
@@ -376,27 +405,27 @@ ol.filters{
                       <!-- <div class="col ">
                         <span class="fs-1 fw-bold ">Filter by:</span>
                       </div> -->
-                    <li class="col ">
-                      <span class="fs-1 fw-bold coblue">Filter by:</span><label class="border" for="All">All</label>
+                    <li class="All">
+                      <label class="" for="All"> All</label>
                     </li>
-                    <li class="col ">
-                      <label class="border" for="Alcohols">Alcohols</label>
+                    <li class=" ">
+                      <label class="" for="Alcohols"> Alcohols</label>
                     </li>
-                    <li class="col ">
-                      <label class="border" for="Ketones">Ketones</label>
+                    <li class=" ">
+                      <label class="" for="Ketones"> Ketones</label>
                     </li>
-                    <li class="col ">
-                      <label class="border" for="Esters">Esters</label>
+                    <li class=" ">
+                      <label class="" for="Esters"> Esters</label>
                     </li>
-                    <li class="col ">
-                      <label class="border" for="Hydrocarbons">Hydrocarbons</label>
+                    <li class=" ">
+                      <label class="" for="Hydrocarbons"> Hydrocarbons</label>
                     </li>
-                    <li class="col ">
-                      <label class="border" for="Ink_Solvents">Ink Solvents</label>
+                    <li class=" ">
+                      <label class="" for="Ink_Solvents"> Ink Solvents</label>
                     </li>
                   </ol>
               
-                  <ol class="posts col-sm-12 col-md-12 col-lg-10">
+                  <ol class="posts row col-sm-12 col-md-12 col-lg-10 p-0">
                     <li class="post" data-category="Alcohols">
                       <article>
                         <figure>
@@ -407,8 +436,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Methanol</h2>
-                            <P> An essential solvent in chemical synthesis and fuel industries.</P>
-    
                           </figcaption>
                         </figure>
                       </article>
@@ -423,7 +450,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Ethanol</h2>
-                            <P>A highly effective solvent used in coatings, sanitizers, and cosmetics.</P>
                           </figcaption>
                         </figure>
                       </article>
@@ -438,7 +464,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">IPA (Isopropanol)</h2>
-                            <p> Commonly used in cleaning and disinfecting applications.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -453,7 +478,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Iso-butanol</h2>
-                            <p>Suitable for coatings and used as a solvent in various formulations.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -469,7 +493,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Acetone</h2>
-                            <p>Known for its quick-drying properties, commonly used in coatings and cleaning.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -485,7 +508,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">MEK (Methyl Ethyl Ketone)</h2>
-                            <p>An industrial solvent ideal for use in coatings and adhesives.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -500,7 +522,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Cyclohexanone</h2>
-                            <p>Often used in the production of nylon and other chemical applications</p>
                             </figcaption>
                         </figure>
                       </article>
@@ -516,7 +537,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Ethyl acetate</h2>
-                            <p>An effective solvent in coatings, inks, and adhesives, known for its rapid evaporation.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -532,7 +552,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Butyl acetate</h2>
-                            <p>Commonly used in the production of lacquers and coatings, offering excellent solubility.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -548,7 +567,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Toluene</h2>
-                            <p> A strong solvent used in coatings, adhesives, and chemical manufacturing.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -564,7 +582,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title"> Mixed xylene</h2>
-                            <p>Effective in paints and coatings due to its solubility and drying properties.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -580,7 +597,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Heavy naphtha</h2>
-                            <p>Suitable for industrial applications like petrochemicals and fuel blending.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -596,7 +612,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Light naphtha</h2>
-                            <p>Used in fuel and petrochemical processing.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -612,7 +627,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Hydrotreated naphtha</h2>
-                            <p> Known for its refined quality, used in fuel production and cleaning.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -628,7 +642,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">SPB solvents</h2>
-                            <p>A specialized hydrocarbon solvent blend for coatings and industrial applications.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -644,7 +657,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Rotogravures ink solvents</h2>
-                            <p> Used in high-quality gravure printing to achieve consistent, sharp colors.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -660,7 +672,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">Flexogravures ink solvents</h2>
-                            <p>Essential for flexographic printing, offering stability and vibrancy.</p>
                           </figcaption>
                         </figure>
                       </article>
@@ -676,7 +687,6 @@ ol.filters{
                               </li>
                             </ol>
                             <h2 class="post-title">PVC ink solvents</h2>
-                            <p> Ideal for PVC-based inks, ensuring adhesion and durability.</p>
                           </figcaption>
                         </figure>
                       </article>
