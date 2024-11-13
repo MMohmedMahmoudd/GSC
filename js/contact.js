@@ -20,7 +20,7 @@ $(function() {
                 required: true,
                 email: true
             },
-            subject: "required",
+            // subject: "required",
             message: "required",
         },
         messages: {
