@@ -3889,3 +3889,6 @@ ol.filters{
 .ms-5{
   margin-left: 1.5rem;
 }
+.d-block{
+  display: block !important;
+}
