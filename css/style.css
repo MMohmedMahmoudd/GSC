@@ -465,6 +465,9 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   .header_logo_area .header_logo_inner .right_info {
     padding-left: 0;
   }
+  .contact_inf_area a.contact_no{
+      top:0 !important;
+  }
 }
 /* Set container to 100% width */
 
@@ -833,11 +836,11 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 /* Welcome_area */
 /*----------------------------------------------------*/
 /* fetures_area */
-.fetures_area {
+/* .fetures_area {
   background: url("../images/fetures-bg.png") no-repeat left bottom;
   padding: 0 ;
   background-size: contain;
-}
+} */
 .fetures_area .fetures {
   background: #fff;
   box-shadow: 0px 0px 26px 0px rgba(215, 212, 212, 0.35);
@@ -941,7 +944,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 
 /* fetures_area */
 /* fetured_project_area */
-.fetured_project_area {
+/* .fetured_project_area {
   display: block;
   overflow: hidden;
   padding-top: 70px;
@@ -950,7 +953,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   background-size: cover;
   position: relative;
   z-index: 1;
-}
+} */
 .fetured_project_area:after {
   content: "";
   position: absolute;
@@ -2888,19 +2891,21 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   padding: 0;
   background: #3c47cd;
   text-align: center;
-  font: 700 30px/164px "Muli", sans-serif;
-  color: #fff;
-  position: relative;
-  z-index: 1;
-}
-.contact_inf_area .contact_no:hover {
-  color: #27538C;
+  display: flex !important;
+  justify-content: center;
+  align-items: center !important;
+  flex-direction: column!important;
+  top: 0;
+  font: 500 1.2rem "Muli", sans-serif!important;
+  color: #fff !important;
+  position: relative !important;
+  z-index: 1!important;
 }
 .contact_inf_area .contact_no:after {
   content: "\f10e";
   position: absolute;
   font-family: Flaticon;
-  top: 0;
+  top: 50px;
   left: 60px;
   font-size: 135px;
   color: #4954db;
@@ -3740,7 +3745,7 @@ font-size: 16px !important;
     padding-left: 30px;
     padding-right: 30px;
   }
-}
+
 @media (max-width: 420px) {
   .slider_carousel .media .media-body {
     padding: 10px;
@@ -3891,4 +3896,19 @@ ol.filters{
 }
 .d-block{
   display: block !important;
+}
+.ms-3{
+  margin-left: 1rem;
+}
+.ms-2{
+  margin-left: 0.5rem;
+}
+.me-2{
+  margin-right: 0.5rem;
+}
+.me-3{
+  margin-right: 1rem;
+}
+.fa-mobile-alt{
+  font-size: 1.5rem;
 }

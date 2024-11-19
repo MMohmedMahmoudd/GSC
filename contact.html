@@ -8,8 +8,9 @@
     <link rel="icon" href="images/GSCLARG.png" type="image/x-icon" />
     <!-- Theme tittle -->
     <title>GSC | Global For Specialty Chemicals</title> 
+    <!-- ! -- TOASTER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://kit.fontawesome.com/ae937d8a07.js" crossorigin="anonymous"></script>
-
     <!-- Theme style CSS --> 
     <link href="css/style.css" rel="stylesheet">   
 
@@ -70,6 +71,8 @@
                         <li><a href="https://www.facebook.com/GSCEGY" target="_blank" title="Facebook Page"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/gsc-egy-3251b6338/" target="_blank" title="linkedin Page"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href="https://www.instagram.com/gscegy/"target="_blank" title="instagram Page"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="http://wa.me/201014807874" target="_blank" title="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+
                         
                     </ul>
                 </div> 
@@ -153,7 +156,7 @@
            <div class="row">
                <div class="col"> 
                    <h2>Leave your Request</h2>
-                    <form class="from_main row" action="php/contact.php" method="post" id="phpcontactform" novalidate="novalidate"> 
+                    <form class="from_main row" action="php/contact.php" method="post" id="contact-form" novalidate="novalidate"> 
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Your Name *">
                         </div>  
@@ -163,6 +166,10 @@
                         <!-- <div class="form-group col-12">   
                             <input type="text" class="form-control" id="subject" name="subject" placeholder="Website url"> 
                         </div>   -->
+                        <div class="form-group col-md-12">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number *">
+                        </div>
+
                         <div class="form-group col-12">
                             <textarea class="form-control" id="message" name="message" placeholder="Type your message"></textarea>
                         </div>
@@ -182,9 +189,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mail_info wow fadeInLeft">
-                    <a href="#"><i class="flaticon-mail"></i>info@globalchem-eg.com</a>
+                    <a ><i class="flaticon-mail"></i>info@globalchem-eg.com</a>
                 </div> 
-                    <a href="#" class="contact_no  col-lg-4">(+20)223426311 & (+20)1018013104</a> 
+                    <a  class="contact_no col-lg-4"><span class="tel d-flex justify-content-center align-items-center p-0 m-0 "> <i class="me-3 fas fa-mobile-alt"></i></i> 0223426311 </span><span class="tel d-flex justify-content-center align-items-center p-0 m-0">  <i class="me-2 fa-solid fa-phone"></i>01018013104</span></a> 
                 <div class="col-lg-4 location_info wow fadeInRight"> 
                     <h4><i class="flaticon-placeholder"></i>4 El Frados Complex, Nasr City, Cairo, Egypt.</h4>
                 </div>
@@ -204,7 +211,7 @@
                         <li><a href="https://www.facebook.com/GSCEGY" target="_blank" title="Facebook Page"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/gsc-egy-3251b6338/" target="_blank" title="linkedin Page"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href="https://www.instagram.com/gscegy/"target="_blank" title="instagram Page"><i class="fa fa-instagram"></i></a></li>
-                        
+                        <li><a href="http://wa.me/201014807874" target="_blank" title="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
                     </ul>
                 </div>
                 <div class="footer_widget col-lg-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
@@ -258,6 +265,68 @@
     <script src="js/jquery.validate.min.js"></script>
     
     <!-- Theme js / Custom js -->
-    <script src="js/theme.js"></script>
-</body>
+    <script src="js/theme.js"></script>+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script>
+        document.querySelector('#contact-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form submission initially
+    
+            const form = e.target;
+            const formData = new FormData(form);
+    
+            // Fetch form inputs
+            const name = form.querySelector('#name').value.trim();
+            const email = form.querySelector('#email').value.trim();
+            const phone = form.querySelector('#phone').value.trim();
+            const message = form.querySelector('#message').value.trim();
+    
+            // Validation checks
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Email validation regex
+            const phoneRegex = /^\+?[1-9]\d{1,14}$/; // Phone validation regex: 10-15 digits
+    
+            if (!name) {
+                toastr.error('Please enter your name', 'Error');
+                return;
+            }
+    
+            if (!email || !emailRegex.test(email)) {
+                toastr.error('Please enter a valid email address', 'Error');
+                return;
+            }
+    
+            if (!phone || !phoneRegex.test(phone)) {
+                toastr.error('Please enter a valid phone number (10-15 digits)', 'Error');
+                return;
+            }
+    
+            if (!message) {
+                toastr.error('Please enter your message', 'Error');
+                return;
+            }
+    
+            // If all validations pass, proceed with submission
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest',
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        toastr.success(data.message, 'Success');
+                        // Reset the form
+                        form.reset();
+                    } else {
+                        toastr.error("An error occurred. Please try again.", 'Error');
+                    }
+                })
+                .catch(() => {
+                    toastr.error("An error occurred while submitting the form. Please try again.", 'Error');
+                });
+        });
+    </script>
+        </body>
 </html>

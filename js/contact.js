@@ -1,6 +1,7 @@
 $(function() {
     "use strict";
 
+    // Set default validation settings
     $.validator.setDefaults({
         highlight: function(element) {
             $(element).closest('.form-group').addClass('has-error');
@@ -11,23 +12,30 @@ $(function() {
         errorPlacement: function(error, element) {}
     });
 
+    // Validate and submit the form
     $("#phpcontactform").submit(function(e) {
         e.preventDefault();
     }).validate({
         rules: {
-            name: "required",
+            name: "required", // Name field is required
             email: {
-                required: true,
-                email: true
+                required: true, // Email is required
+                email: true // Must be a valid email
+            },
+            phone: {
+                required: true, // Phone is required
+                digits: true, // Must contain only digits
+                minlength: 10, // Minimum length 10 digits
+                maxlength: 15 // Maximum length 15 digits
             },
             // subject: "required",
-            message: "required",
+            message: "required" // Message is required
         },
         messages: {
             name: "Please enter your name",
             email: "Please enter a valid email address",
-            subject: "Please enter a subject",
-            message: "Please enter your message",
+            phone: "Please enter a valid phone number (10-15 digits)",
+            message: "Please enter your message"
         },
         submitHandler: function(form) {
             $("#js-contact-btn").attr("disabled", true).text('Please wait...');
@@ -35,6 +43,7 @@ $(function() {
             var error_msg = $('#js-contact-result').data('error-msg');
             var dataString = $(form).serialize();
 
+            // Submit the form using AJAX
             $.ajax({
                 type: "POST",
                 data: dataString,
@@ -69,4 +78,3 @@ $(function() {
         }
     });
 });
-

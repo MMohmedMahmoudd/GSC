@@ -1,6 +1,6 @@
 /* fetures_area */
 .fetures_area{
-    background: url("../images/fetures-bg.png") no-repeat left bottom;
+    // background: url("../images/fetures-bg.png") no-repeat left bottom;
     padding: 140px 0 120px;
     background-size: contain;
     .fetures{
@@ -9,11 +9,11 @@
         padding: 45px 30px 45px 32px;
         margin-bottom: 30px;
         @include transition;
-        &:hover, &:focus{
-            background: $bc;
-        }
+        // &:hover, &:focus{
+        //     background: $bc;
+        // }
         .fetures_i:before{
-            color: $bc;
+            // color: $bc;
             display: block; 
             line-height: 1;
             font-size: 57px;
@@ -36,7 +36,7 @@
                 @include transition; 
             }
             &:hover, &:focus{
-                color: $bc;
+                // color: $bc;
                 i{
                     margin-left: 10px;
                 }
@@ -44,7 +44,7 @@
         }
         
         &:hover, &:focus{
-            background: $bc;
+            // background: $bc;
             .fetures_i:before, h4, a{
                 color: #fff;
             }
@@ -86,7 +86,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: $bc;
+            // background: $bc;
             box-shadow: none;   
             opacity: 0;
             visibility: hidden; 
@@ -171,7 +171,7 @@
             border: 2px solid #f9f8f7;
             line-height: 106px;
             background: transparent;
-            color: $bc;
+            // color: $bc;
             min-width: 244px;
             font-size: 20px;
             float: right;
@@ -204,7 +204,7 @@
                     &:before{
                         content: "";
                         position: absolute;
-                        background: $bc;
+                        // background: $bc;
                         width: 40px;
                         height: 1px; 
                         left: -100%; 
@@ -218,7 +218,7 @@
                     &:after{
                         content: "";
                         position: absolute;
-                        background: $bc;
+                        // background: $bc;
                         width: 1px;
                         height: 40px; 
                         left: 0;
@@ -249,7 +249,7 @@
                     top: -10px;
                     border-style: solid;
                     border-width: 0 7.5px 10px 7.5px;
-                    border-color: transparent transparent $bc transparent;
+                    // border-color: transparent transparent $bc transparent;
                     width: 15px;
                     margin: 0 auto;
                     opacity: 0;
@@ -315,7 +315,7 @@
                     }
                 }
                 .project_content{
-                    background: $bc;
+                    // background: $bc;
                     top: 20px; 
                     &:after{
                         opacity: 1;
