@@ -1,0 +1,337 @@
+/* fetures_area */
+.fetures_area{
+    // background: url("../images/fetures-bg.png") no-repeat left bottom;
+    padding: 140px 0 120px;
+    background-size: contain;
+    .fetures{
+        background: #fff;
+        box-shadow: 0px 0px 26px 0px rgba(215, 212, 212, 0.35);
+        padding: 45px 30px 45px 32px;
+        margin-bottom: 30px;
+        @include transition;
+        // &:hover, &:focus{
+        //     background: $bc;
+        // }
+        .fetures_i:before{
+            // color: $bc;
+            display: block; 
+            line-height: 1;
+            font-size: 57px;
+            font-weight: normal;
+        }
+        .heding{
+            font: 700 24px/35px $muli;
+            color: $heding;
+            display: block;
+            padding:20px 0; 
+        }
+        a{
+            display: block;
+            font: 600 18px/1 $muli;
+            color: #000;
+            padding-top: 50px;
+            i{
+                font-size: 12px;
+                margin-left: 5px;
+                @include transition; 
+            }
+            &:hover, &:focus{
+                // color: $bc;
+                i{
+                    margin-left: 10px;
+                }
+            }
+        }
+        
+        &:hover, &:focus{
+            // background: $bc;
+            .fetures_i:before, h4, a{
+                color: #fff;
+            }
+            p{
+                 color: rgba(255, 255, 255, 0.702);
+            }
+        }
+    }
+}
+.fa_2{
+    .factories{
+        position: relative; 
+        box-shadow: 0px 0px 26px 0px rgba(215, 212, 212, 0.35);
+        overflow: hidden;   
+        margin-bottom: 30px;
+        .factories_img{
+            position: relative;
+            text-align: center;
+            transform-origin: 50% 100%;
+            img{
+                max-width: 100%;
+            }
+            
+            a{
+                display: block;
+                font: 700 21px/30px $muli;
+                color: #fff; 
+                padding: 20px 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(60, 71, 205, 0.839); 
+            }
+        }
+        .fetures{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            // background: $bc;
+            box-shadow: none;   
+            opacity: 0;
+            visibility: hidden; 
+            transform: scale(0.5) rotateY(180deg); 
+            transition: all 500ms ease;   
+            margin: 0;
+            .fetures_i:before, h4, a{
+                color: #fff;
+            }
+            p{
+                 color: rgba(255, 255, 255, 0.702);
+            }
+        }
+        &:hover, &:focus{ 
+            .fetures{
+                opacity: 1; 
+                transform: scale(1) rotateY(0deg);
+                visibility: visible; 
+            }
+        }
+    }
+}
+/* fetures_area */
+
+/* fetured_project_area */
+.fetured_project_area{
+    display: block;
+    overflow: hidden;
+    padding-top: 70px;
+    padding-bottom: 260px;
+    background: url(../images/fetured-project-bg.jpg) no-repeat center bottom fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        border-style: solid;
+        border-width: 710px 6340px 0 0;
+        border-color: #fff transparent transparent transparent;
+        z-index: -1;
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: block; 
+        background-color: rgba(11, 57, 140, 0.859);
+        z-index: -1;
+    }
+    .tittle{ 
+        display: block;
+        overflow: hidden;
+        h2{
+            color: $heding;
+            font: 700 48px/55px $muli;
+            position: relative;
+            padding-top: 25px;
+            &:after{
+                content: "Fetured";
+                font: 700 110px/1 $danc;
+                color: #f0f0f0;
+                position: absolute;
+                left: -30px; 
+                top: -5px;  
+                text-align: center; 
+                z-index: -1;
+            }
+        }
+        p{
+            display: inline-block;
+            max-width: 780px;
+            padding-top: 40px;
+        }
+        a{
+            border: 2px solid #f9f8f7;
+            line-height: 106px;
+            background: transparent;
+            // color: $bc;
+            min-width: 244px;
+            font-size: 20px;
+            float: right;
+            margin-top: -20px;
+            i{
+                font-size: 15px;
+                padding-left: 15px; 
+            } 
+        }
+    }
+    .fetured_project{
+        padding: 70px 175px 10px; 
+        .project{
+            margin-bottom: 30px;
+            .project_img{
+                display: block;
+                overflow: hidden;
+                position: relative;
+                .img_zoom{
+                    display: block;
+                    overflow: hidden;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;  
+                    bottom: 0;
+                    background-color: rgba(255, 255, 255, 0.612);
+                    opacity: 0;
+                    @include transition; 
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        // background: $bc;
+                        width: 40px;
+                        height: 1px; 
+                        left: -100%; 
+                        right: 0;
+                        margin: 0 auto;
+                        top: 50%;
+                        z-index: 1;
+                        @include transition;
+                        opacity: 0;
+                    }
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        // background: $bc;
+                        width: 1px;
+                        height: 40px; 
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        top: 0%;
+                        transform: translateY(-50%);
+                        @include transition;
+                        opacity: 0;
+                    }
+                }
+                img{
+                    max-width: 100%;
+                    @include transition;
+                }
+            }
+            .project_content{ 
+                padding: 45px 42px;
+                top: 0;
+                position: relative;
+                @include transition;
+                &:after{
+                    content: "";
+                    @include transition;
+                    position: absolute;
+                    left: 0;
+                    right: 0px;
+                    top: -10px;
+                    border-style: solid;
+                    border-width: 0 7.5px 10px 7.5px;
+                    // border-color: transparent transparent $bc transparent;
+                    width: 15px;
+                    margin: 0 auto;
+                    opacity: 0;
+                }
+                .heding{
+                    display: block;
+                    font: 700 24px/35px $muli;
+                    color: #fff;
+                    padding-bottom: 30px;
+                    padding-top: 15px;
+                    position: relative;
+                    z-index: 1;
+                    &:before{
+                        content: "01";
+                        font: 900 100px/1 $muli;
+                        color: #32569e;
+                        position: absolute;
+                        left: -10px;
+                        top: -20px; 
+                        z-index: -1;
+                    }
+                    &.h_2:before{
+                        content: "02";
+                    }
+                    &.h_3:before{
+                        content: "03";
+                    }
+                    &.h_4:before{
+                        content: "04";
+                    }
+                    &.h_5:before{
+                        content: "05";
+                    }
+                    &.h_6:before{
+                        content: "06";
+                    }
+                    &.h_7:before{
+                        content: "07";
+                    }
+                    &.h_8:before{
+                        content: "08";
+                    }
+                    &:hover, &:focus{
+                        color: rgba(255, 255, 255, 0.702);
+                    }
+                }
+                p{
+                    color: rgba(255, 255, 255, 0.702);
+                }
+            }
+            
+            &:hover, &:focus{
+                .img_zoom{
+                    opacity: 1; 
+                    &:before{
+                        right: 0;
+                        opacity: 1;
+                        left: 0;
+                    }
+                    &:after{
+                        top: 50%;
+                        opacity: 1;
+                    }
+                }
+                .project_content{
+                    // background: $bc;
+                    top: 20px; 
+                    &:after{
+                        opacity: 1;
+                    }
+                    .heding:before{
+                        color: #ff6625;
+                    }
+                }
+            }
+        }
+    }
+}
+.fpa_2{
+    padding-bottom: 35px;
+    .fetured_project .project {
+        margin-bottom: 80px;
+    }
+}
+/* fetured_project_area */

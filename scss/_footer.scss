@@ -64,13 +64,15 @@
         padding: 0;
         background: #3c47cd;
         text-align: center;
-        font: 700 30px/164px $muli;
+        font: 500 1.2rem "Muli", sans-serif;
         color: #fff;
         position: relative;
         z-index: 1;
-        &:hover{
-            color: $bc;
-        }
+        top: 0;
+        color: #fff ;
+        position: relative;
+        z-index: 1;
+        
         &:after{
             content: "\f10e";
             position: absolute;

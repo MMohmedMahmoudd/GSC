@@ -2902,21 +2902,24 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   position: relative !important;
   z-index: 1!important;
 }
-.contact_inf_area .contact_no:after {
-  content: "\f10e";
-  position: absolute;
-  font-family: Flaticon;
-  top: 50px;
-  left: 60px;
-  font-size: 135px;
-  color: #4954db;
-  z-index: -1;
-  font-weight: 700;
-}
 
 .cia_2 {
   margin-top: 140px;
 }
+.contact_inf_area .contact_no:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  /* right: 0; */
+  bottom: 0;
+  height: 222px;
+  width: 101%;
+  z-index: -1;
+  background-image: -moz-linear-gradient(178deg, #27538C 0%, white 71%);
+  background-image: -webkit-linear-gradient(128deg, #02377c 0%, white 138%);
+  background-image: -ms-linear-gradient(178deg, #27538C 0%, white 71%);
+}
+
 
 /* Contact_inf_area */
 /* Footer Home pages */
@@ -3181,7 +3184,7 @@ div#slide-4-layer-5{
     padding-left: 20px;
   }
   .header_logo_area .header_logo_inner .right_info .media:nth-child(2) {
-    padding-left: 30px;
+    /* padding-left: 30px; */
   }
   .header_logo_area .header_logo_inner .right_info .media .media-body {
     padding-left: 10px;
