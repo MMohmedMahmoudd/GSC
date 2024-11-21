@@ -465,7 +465,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   .header_logo_area .header_logo_inner .right_info {
     padding-left: 0;
   }
-  .contact_inf_area a.contact_no{
+  .contact_inf_area div.contact_no{
       top:0 !important;
   }
 }
@@ -2895,6 +2895,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   justify-content: center;
   align-items: center !important;
   flex-direction: column!important;
+  row-gap: 2rem;
   top: 0;
   font: 500 1.2rem "Muli", sans-serif!important;
   color: #fff !important;
@@ -3879,6 +3880,7 @@ div.product .fetures{
 .header_logo_area .header_logo_inner .right_info .header_social{
   display: flex;
   text-align: right;
+  justify-content: end;
   padding: 0;
   align-items: center;
 }
@@ -3911,4 +3913,51 @@ ol.filters{
 }
 .fa-mobile-alt{
   font-size: 1.5rem;
+}
+
+.header_social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul.header_social li a i:before {
+  speak: none;
+  display: block;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  animation: TopToBottom 0.3s forwards;
+}
+.header_social li a {
+  font-size: 18px;
+  color: #27538C !important;
+}
+.header_social li a:hover, .header_social li a:focus {
+  color: #3D8BF2 !important;
+}
+.header_social li a:hover i:before, .header_social li a:focus i:before {
+  animation: BottomToTop 0.3s forwards;
+}
+nav .header_social li a::after{
+  content: "";
+  position: static !important;
+  left: 0;
+  top: 0;
+  width: 0px;
+  height: 0 !important;
+  background: #27538C;
+  border-radius: 0;
+  display: none !important;
+  margin: 0;
+  border: 0;
+  transition: none;
+}
+ul.changed{
+  display: none;
+}
+ul.changed.show{
+  display: flex ;
+  justify-content: center;
+
 }

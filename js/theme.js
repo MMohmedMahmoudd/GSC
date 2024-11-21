@@ -14,6 +14,19 @@
             });
         };
     };  
+    function toggleUlVisibility(){
+        if ( $('ul.changed').length ){ 
+            $(window).on('scroll', function() {
+                var scroll = $(window).scrollTop();   
+                if (scroll >= 295) {
+                    $("ul.changed").show();
+                    $("ul.changed").css('display', 'flex'); // Set display to flex when shown
+                } else {
+                    $("ul.changed").hide();
+                }
+            });
+        };
+    };  
     
     /* Main Slider js */
     function main_slider(){
@@ -384,11 +397,13 @@
     new WOW().init();
     main_slider ();
     navbarFixed (); 
+    toggleUlVisibility();
     magnificPopup ();
     counterUp ();
     testimonialLogo ();
     scrollToTop ();
     preloader (); 
+    
     
 })(jQuery);
 $(document).ready(function() {
