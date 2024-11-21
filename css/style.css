@@ -3961,3 +3961,8 @@ ul.changed.show{
   justify-content: center;
 
 }
+@media (min-width:1200px){
+  .footer_nav.solo{
+    transform: translate(20px,88px);
+  }
+}
