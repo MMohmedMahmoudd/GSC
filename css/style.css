@@ -3094,6 +3094,12 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   color: #949292;
   padding: 0;
 }
+.footer_area .copy_right a {
+text-decoration: none;
+color: #949292;
+
+}
+
 
 /* End Footer Home pages */
 .scroll-top {
