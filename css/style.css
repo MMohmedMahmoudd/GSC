@@ -324,7 +324,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .header_logo_area .header_logo_inner .right_info .media {
   padding: 0;
-  margin-bottom: 23px;
+  /* margin-bottom: 23px; */
 }
 .header_logo_area .header_logo_inner .right_info .media:nth-child(2) {
   padding-left: 14px;
@@ -3959,7 +3959,6 @@ ul.changed{
 ul.changed.show{
   display: flex ;
   justify-content: center;
-
 }
 @media (min-width:1200px){
   .footer_nav.solo{
