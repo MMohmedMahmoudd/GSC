@@ -100,6 +100,9 @@ Table of Content:
 .w-95{
   width: 95% !important;
 }
+.w-90{
+  width: 90% !important;
+}
 .fw-bold{
   font-weight: bold;
 }
@@ -3973,4 +3976,10 @@ ul.changed.show{
   .footer_nav.solo{
     transform: translate(20px,88px);
   }
+}
+.pe-0{
+  padding-right: 0 !important;
+}
+.ps-0{
+  padding-left: 0 !important;
 }
