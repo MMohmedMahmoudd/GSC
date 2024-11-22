@@ -3983,3 +3983,37 @@ ul.changed.show{
 .ps-0{
   padding-left: 0 !important;
 }
+@media (max-width: 1024px) {
+  .contact_inf_area .contact_no {
+      top: 0 !important;
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+  }
+}
+@media (max-width: 1024px) {
+  .contact_inf_area .contact_no:after {
+      top: 0px !important;
+      height: 100% !important;
+  }
+  .map_area .col-lg-7.col-sm-12{
+justify-content: center !important;
+align-items: center !important;
+padding-right: 15px !important;
+  }
+  .map_area .col-lg-7.col-sm-12 .parentframe {
+width: 100% !important;
+justify-content: center !important;
+align-items: center !important;
+
+}
+
+.map_area .easy_contact {
+max-width: 100% !important;
+margin: 0 !important;
+}
+.map_area .col-lg-5.col-sm-12{
+  padding-left: 15px !important;
+  margin-top: 15px !important;
+
+}
+}
